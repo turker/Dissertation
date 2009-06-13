@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="test">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="test_case">
+          <xs:complexType>
+            <xs:attribute name="comment" type="xs:string" use="required" />
+            <xs:attribute name="db" type="xs:string" use="required" />
+            <xs:attribute name="id" type="xs:positiveInteger" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="input_generator" maxOccurs="1" minOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="parameter">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="value" type="xs:double" />
+                  </xs:sequence>
+                  <xs:attribute name="name" type="xs:string" use="required" />
+                  <xs:attribute name="type" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="deployment">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="cpu" minOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="xdaqexecutive" minOccurs="1" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element maxOccurs="unbounded" name="application">
+                            <xs:complexType>
+                              <xs:sequence minOccurs="0">
+                                <xs:element maxOccurs="unbounded" name="appparam">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="value" type="xs:double" />
+                                    </xs:sequence>
+                                    <xs:attribute name="name" type="xs:string" use="required" />
+                                    <xs:attribute name="type" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute name="id" type="xs:positiveInteger" use="required" />
+                              <xs:attribute name="monperf" type="xs:boolean" use="required" />
+                              <xs:attribute name="name" type="xs:string" use="required" />
+                              <xs:attribute name="nbOfInstances" type="xs:positiveInteger" use="required" />
+                              <xs:attribute name="unique_id" type="xs:positiveInteger" use="required" />
+                              <xs:attribute name="minExecTime" type="xs:positiveInteger" use="required" />
+                              <xs:attribute name="maxExecTime" type="xs:positiveInteger" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="port" type="xs:unsignedShort" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="ip" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dataflow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="connection">
+                <xs:complexType>
+                  <xs:attribute name="dstApp" type="xs:positiveInteger" use="required" />
+                  <xs:attribute name="srcApp" type="xs:positiveInteger" use="required" />
+                  <xs:attribute name="dstInstance" type="xs:positiveInteger" use="required" />
+                  <xs:attribute name="srcInstance" type="xs:positiveInteger" use="required" />                  
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="performance">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="probe">
+                <xs:complexType>
+                  <xs:attribute name="metric" type="xs:string" use="required" />
+                  <xs:attribute name="negative" type="xs:string" use="required" />
+                  <xs:attribute name="positive" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>        
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

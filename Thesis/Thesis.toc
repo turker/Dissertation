@@ -1,0 +1,64 @@
+\hfill Page
+
+\contentsline {chapter}{\uppercase {Acknowledgments}}{iii}
+\contentsline {chapter}{LIST OF TABLES}{vi}
+\contentsline {chapter}{LIST OF FIGURES}{vii}
+\flushleft Chapter
+\contentsline {chapter}{\numberline {I}Introduction}{1}
+\contentsline {chapter}{\numberline {II}A Method for Performance Testing Distributed Middleware Based Systems}{2}
+\contentsline {section}{Challenges of Performance Testing Distributed Middleware Based Systems}{3}
+\contentsline {section}{A Model Based Approach to Performance Testing Distributed Systems}{5}
+\contentsline {subsection}{Test Series Definition Modeling Language}{8}
+\contentsline {subsubsection}{Modeling Application Types}{9}
+\contentsline {subsubsection}{Modeling Resources and Resource Configurations}{13}
+\contentsline {subsubsection}{Parameterizing the Model}{15}
+\contentsline {subsubsection}{Modeling Input Generator}{19}
+\contentsline {subsubsection}{Modeling Test Series Definitions}{21}
+\contentsline {subsection}{Modeling Behavior with DEVS}{26}
+\contentsline {section}{Closing the Loop: Performance Engineering}{28}
+\contentsline {subsection}{Performance Monitoring}{33}
+\contentsline {subsection}{Perturbation and Sensitivity Analysis}{33}
+\contentsline {section}{Summary}{34}
+\contentsline {chapter}{\numberline {III}Background on DEVS Modeling Formalism}{35}
+\contentsline {section}{Atomic DEVS Models}{35}
+\contentsline {section}{Coupled DEVS Models}{37}
+\contentsline {section}{Summary}{38}
+\contentsline {chapter}{\numberline {IV}Background on CMS DAQ System}{40}
+\contentsline {section}{DAQ Architecture}{41}
+\contentsline {section}{Event Builder}{44}
+\contentsline {section}{RU Builder}{46}
+\contentsline {subsection}{Event Manager (EVM)}{47}
+\contentsline {subsection}{Readout Unit (RU)}{48}
+\contentsline {subsection}{Builder Unit (BU)}{50}
+\contentsline {section}{Summary}{51}
+\contentsline {chapter}{\numberline {V}Model Based Performance Engineering of CMS DAQ System}{52}
+\contentsline {section}{System Under Test}{52}
+\contentsline {subsection}{Application Layer}{54}
+\contentsline {subsection}{Middleware Layer}{56}
+\contentsline {section}{Application Simulation Models}{57}
+\contentsline {subsubsection}{Event Manager (EVM)}{57}
+\contentsline {subsubsection}{Readout Unit (RU)}{59}
+\contentsline {subsubsection}{Builder Unit (BU)}{64}
+\contentsline {subsubsection}{Peer Transport (PT)}{67}
+\contentsline {subsubsection}{Executive}{68}
+\contentsline {subsection}{Processor Model}{69}
+\contentsline {subsection}{Performance Aspect in Models}{71}
+\contentsline {section}{Input Data Generator}{72}
+\contentsline {section}{Communication Interfaces Between Applications}{76}
+\contentsline {subsection}{EVM-BU Interface}{77}
+\contentsline {subsection}{EVM-RU Interface}{79}
+\contentsline {subsection}{BU-RU Interface}{80}
+\contentsline {subsection}{Application-Executive-PT Interface}{82}
+\contentsline {subsection}{Application-Processor Interface}{83}
+\contentsline {section}{Test Generation from TSDML Models}{84}
+\contentsline {subsection}{Constructing a Test Series Definition}{84}
+\contentsline {subsubsection}{Application Types}{84}
+\contentsline {subsubsection}{Test Series Definition}{86}
+\contentsline {subsection}{Test Case Generation}{97}
+\contentsline {subsection}{Test Execution}{99}
+\contentsline {section}{Closing the Loop: Performance Engineering}{102}
+\contentsline {section}{Results and Analysis}{102}
+\contentsline {section}{Summary}{102}
+\flushleft Appendix
+\contentsline {section}{Test Case Schema}{103}
+\contentsline {chapter}{BIBLIOGRAPHY}{108}

@@ -1,0 +1,97 @@
+\documentclass[12pt]{vu-eecs-dissertation}
+
+  \usepackage{graphicx}	% a graphics package
+	\usepackage{verbatim}   % used for program (code) listings
+	%\usepackage{color}      % used if color is used in text
+	\usepackage{subfigure}  % used for side-by-side figures
+	\usepackage{amsmath}    % needed if you have subequations
+	\usepackage{fancybox}		% to make nice neat boxes with text in them
+	\usepackage{multirow}  % for the fancy tables
+	\usepackage{rotating}  % for even fancier tables
+	%\usepackage{bookmark}  % for bookmarks in pdf
+	\usepackage{mathrsfs}
+	
+\newtheorem{definition}{Definition}
+\newtheorem{problem}{Problem}
+\newtheorem{property}{Property}
+\newtheorem{lemma}{Lemma}
+\newtheorem{proof}{Proof}
+	
+\begin{document}
+
+
+	
+	\title{Model Based Performance Testing of Distributed Large Scale Systems}
+    
+	\author{Turker Keskinpala}
+    
+  \principaladvisertitle{Professor}
+	\principaladviser{Gabor Karsai, Ph.D.}
+	
+	\firstreadertitle{Dr.}
+  \firstreader{Theodore Bapty, Ph.D.}
+    
+	\secondreadertitle{Dr.}
+  \secondreader{Sandeep Neema, Ph.D}
+    
+  \thirdreadertitle{Professor}
+  \thirdreader{Gautam Biswas, Ph.D.}
+    
+  \fourthreadertitle{Professor}
+  \fourthreader{Paul Sheldon, Ph.D. \\(Department of Physics and Astronomy)}
+    
+  \fifthreadertitle{.}
+  \fifthreader{.}
+    
+  
+ 
+    \beforepreface
+%    \prefacesection{Preface}
+%        This paper identifies a research problem within the area of model-based high-performance embedded systems, and defines research goals to be achieved in hopes of providing a
+%		solution to the outlined problem. This paper also provides a review of autonomic computing and its history through several related areas of research
+%		in order to provide justification for the proposal of new research. Following the literature
+%		review is a brief summary of the relevant efforts noting where research is
+%		lacking with respect to the identified problem. This summary forms the justification for new
+%		research needed to solve the identified problem. After the problem has been identified and the research effort
+%		justified, a plan of action is proposed which outlines the methods and procedures to be taken
+%		during the course of the research, identifying several research milestones which will ultimately
+%		serve as the completion criteria for the fulfillment of the doctoral degree.
+		
+    \prefacesection{Acknowledgments}
+        This work is supported by NSF 
+		
+    %    In particular, the I would like to thank Dr. Michael Haney both for his keen insight toward
+		%problem solving and for his continuous reminders for keeping things as simple as possible.
+		%Also, I would like to thank Jim Kowalkowski for his concrete knowledge of software systems
+		%and his rigorous adhesion to software standards which continuously contributes to the quality
+		%of the work presented in this paper.
+		
+		
+    \afterpreface
+ 
+ 	\include{Introduction}
+	\include{Methodology}
+	\include{OpenDevs}	
+	\include{CmsXdaq}
+	\include{Implementation}
+	
+	\appendix
+	\input TSDSchemaApx.tex
+	
+    
+%     \include{Problem_Motivation}
+%     
+%     \include{Literature_Review}
+%     
+     \bibliographystyle{unsrt}
+%     \bibliographystyle{acm}
+%     \bibliography{Nordstrom_Dissertation}
+	\bibliography{turker-dissertation}
+%     
+%     \include{Manuscript_1}
+%     
+%     \include{Manuscript_2}
+%     
+%     \include{Manuscript_3}
+    
+\end{document}

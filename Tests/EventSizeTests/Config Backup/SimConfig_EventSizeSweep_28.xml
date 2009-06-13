@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<test xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="SimConfig.xsd">
+
+  <test_case comment="Event Size Tests" db="XDAQSim.sqlite" id="28"/>
+
+  <input_generator>
+    <parameter name="EventSizeSigma" type="Lognormal">
+      <value>36400</value>
+    </parameter>
+    <parameter name="EventSizeMean" type="Lognormal">
+      <value>2.34881e+006</value>
+    </parameter>
+    <parameter name="NumberOfDataSources" type="Lognormal">
+      <value>8</value>
+    </parameter>
+    <parameter name="BlockSize" type="Lognormal">
+      <value>4096</value>
+    </parameter>
+  </input_generator>
+
+  <deployment>
+    <cpu ip="192.168.1.1">
+      <xdaqexecutive port="4000">
+        <application id="10" maxExecTime="10" minExecTime="3" monperf="true" name="RU" nbOfInstances="1" unique_id="2">
+          <appparam name="blockFIFOCapacity" type="double">
+            <value>4096</value>
+          </appparam>
+        </application>
+        <application id="11" maxExecTime="15" minExecTime="3" monperf="true" name="BU" nbOfInstances="1" unique_id="4">
+          <appparam name="EVM_ALLOCATE_CLEAR_PACKING" type="double">
+            <value>8</value>
+          </appparam>
+          <appparam name="RU_SEND_PACKING" type="double">
+            <value>8</value>
+          </appparam>
+        </application>
+        <application id="12" maxExecTime="10" minExecTime="3" monperf="true" name="EVM" nbOfInstances="1" unique_id="3">
+          <appparam name="RU_READOUT_PACKING" type="double">
+            <value>8</value>
+          </appparam>
+          <appparam name="nbEvtIdsInBuilder" type="double">
+            <value>32</value>
+          </appparam>
+          <appparam name="MAX_BUS" type="double">
+            <value>8</value>
+          </appparam>
+          <appparam name="maxEvtsUnderConstruction" type="double">
+            <value>32</value>
+          </appparam>
+          <appparam name="MAX_RUS" type="double">
+            <value>8</value>
+          </appparam>
+          <appparam name="DEFAULT_NB_EVENTS" type="double">
+            <value>64</value>
+          </appparam>
+          <appparam name="MAX_BU_RESOURCES" type="double">
+            <value>8</value>
+          </appparam>
+        </application>
+        <application id="13" maxExecTime="5" minExecTime="1" monperf="false" name="PT" nbOfInstances="1" unique_id="1"/>
+      </xdaqexecutive>
+    </cpu>
+  </deployment>
+
+  <dataflow>
+    <connection dstApp="1" dstInstance="1" srcApp="3" srcInstance="1"/>
+    <connection dstApp="3" dstInstance="1" srcApp="1" srcInstance="1"/>
+    <connection dstApp="1" dstInstance="1" srcApp="2" srcInstance="1"/>
+    <connection dstApp="2" dstInstance="1" srcApp="1" srcInstance="1"/>
+    <connection dstApp="1" dstInstance="1" srcApp="4" srcInstance="1"/>
+    <connection dstApp="4" dstInstance="1" srcApp="1" srcInstance="1"/>
+    <connection dstApp="3" dstInstance="1" srcApp="4" srcInstance="1"/>
+    <connection dstApp="4" dstInstance="1" srcApp="3" srcInstance="1"/>
+    <connection dstApp="3" dstInstance="1" srcApp="2" srcInstance="1"/>
+    <connection dstApp="2" dstInstance="1" srcApp="3" srcInstance="1"/>
+    <connection dstApp="4" dstInstance="1" srcApp="2" srcInstance="1"/>
+    <connection dstApp="2" dstInstance="1" srcApp="4" srcInstance="1"/>
+  </dataflow>
+
+  <performance>
+    <probe metric="Throughput" negative="RU_in" positive="RU_out"/>
+    <probe metric="Throughput" negative="RU_in" positive="EVM_out"/>
+    <probe metric="Throughput" negative="BU_in" positive="BU_out"/>
+  </performance>
+
+</test>

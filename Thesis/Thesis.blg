@@ -1,0 +1,19 @@
+This is BibTeX, Version 0.99cThe top-level auxiliary file: E:\Turker\My Dropbox\Dissertation\Thesis\Thesis.aux
+A level-1 auxiliary file: Introduction.aux
+A level-1 auxiliary file: Methodology.aux
+A level-1 auxiliary file: OpenDevs.aux
+A level-1 auxiliary file: CmsXdaq.aux
+A level-1 auxiliary file: Implementation.aux
+The style file: unsrt.bst
+Database file #1: turker-dissertation.bib
+I was expecting a `,' or a `}'---line 1957 of file turker-dissertation.bib
+ :  
+ :  author = "Steven Murray"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "Devspp"
+Warning--I didn't find a database entry for "ru"
+Warning--empty year in Weyuker00
+Warning--empty publisher in ieee_90
+Warning--empty journal in I2O
+(There was 1 error message)

@@ -1,0 +1,90 @@
+\begin{thebibliography}{10}
+
+\bibitem{Zeigler84}
+Bernard~P. Zeigler.
+\newblock {\em Theory of Modelling and Simulation}.
+\newblock Krieger Publishing Co., Inc., Melbourne, FL, USA, 1984.
+
+\bibitem{SS01}
+Richard~E. Schantz and Douglas~C. Schmidt.
+\newblock Middleware for distributed systems - evolving the common structure
+  for network-centric applications, July~30 2001.
+
+\bibitem{Weyuker00}
+E.J. Weyuker and F.I. Vokolos.
+\newblock Experience with performance testing of software systems: Issues, an
+  approach and case study.
+\newblock {\em Software Engineering, IEEE Transactions on}, 26.
+
+\bibitem{Gao03}
+Jerry~Zeyu Gao, H.-S.~Jacob Tsao, and Ye~Wu.
+\newblock {\em Testing and Quality Assurance for Component-Based Software}.
+\newblock Artech House Publishers, September 2003.
+
+\bibitem{LiuGorton02}
+Yan Liu, Ian Gorton, Anna Liu, Ning Jiang, and Shiping Chen.
+\newblock Designing a test suite for empirically-based middleware performance
+  prediction.
+\newblock In {\em CRPIT '02: Proceedings of the Fortieth International
+  Conference on Tools Pacific}, pages 123--130, Darlinghurst, Australia,
+  Australia, 2002. Australian Computer Society, Inc.
+
+\bibitem{Denaro04}
+Giovanni Denaro, Andrea Polini, and Wolfgang Emmerich.
+\newblock Early performance testing of distributed software applications.
+\newblock {\em SIGSOFT Softw. Eng. Notes}, 29(1):94--103, 2004.
+
+\bibitem{Denaro05}
+G.~Denaro, A.~Polini, and W.~Emmerich.
+\newblock {\em Performance testing of distributed component architectures}.
+\newblock Springer, 2005.
+
+\bibitem{areapaper}
+Turker Keskinpala.
+\newblock Model based perofmrnace testing of distributed large scale systems,
+  2006.
+
+\bibitem{Greenfield2004Software}
+Jack Greenfield, Keith Short, Steve Cook, and Stuart Kent.
+\newblock {\em Software Factories: Assembling Applications with Patterns,
+  Models, Frameworks, and Tools}.
+\newblock Wiley, August 2004.
+
+\bibitem{MIC}
+Janos Sztipanovits and Gabor Karsai.
+\newblock Model-integrated computing.
+\newblock {\em IEEE Computer}, 30:110--112, April 1997.
+
+\bibitem{GME}
+Akos Ledeczi, Miklos Maroti, Arpad Bakay, Greg Nordstrom, Jason Garrett, Chuck
+  Thomasson, Jonathan Sprinkle, and Peter Volgyesi.
+\newblock Gme 2000 users manual (v2.0), December 2001.
+
+\bibitem{ieee_90}
+IEEE~Std 610.12-1990.
+\newblock {\em IEEE standard glossary of software engineering terminology}.
+\newblock 1990.
+
+\bibitem{Chu99}
+Lawrence Chung, Brian~A. Nixon, Eric Yu, and John Mylopoulos.
+\newblock {\em Non-Functional Requirements in Software Engineering (THE KLUWER
+  INTERNATIONAL SERIES IN SOFTWARE ENGINEERING Volume 5) (International Series
+  in Software Engineering)}.
+\newblock Springer, October 1999.
+
+\bibitem{CMSTDR}
+Cms technical design report: Data acquisition and high-level trigger, December
+  2002.
+
+\bibitem{I2O}
+J.~Gutleber, E.~Cano, S.~Cittolin, F.~Meijers, L.~Orsini, and D.~Samyn.
+\newblock Architectural software support for processing clusters.
+\newblock 2000.
+
+\bibitem{rubuilder}
+Ru builder user manual.
+
+\bibitem{boost}
+Boost c++ libraries, http://www.boost.org/.
+
+\end{thebibliography}

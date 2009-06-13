@@ -1,0 +1,42 @@
+\chapter{Test Case Generation From Models}
+
+One aspect of testing a high performance distributed middleware framework and its components is to be able to create many configurations that would configure functional operation of components as well as their deployment in the cluster. In the case of CMS XDAQ, the existing practice for testing the system is to come up with limited test XML configurations that aim to test different aspects of the system. 
+
+It is cumbersome and inefficient to write XML configurations by hand as the tester would be making many copy-paste operations which can potentially introduce errors into the process.
+
+\section{Test Series Definition Modeling Language}
+Test Series Definition Modeling Language (TSDML) was designed as a domain specific performance modeling language. During design time it was determined that such a domain specific language should:
+
+\begin{itemize}
+	\item Provide the means to model available resources
+	\item Provide the constructs to properly capture the performance characteristics of the system
+	\item Enable the designer to clearly represent or identify most relevant performance related parameters
+	\item Be parametrized so that series of test cases can be generated from a single model
+\end{itemize}
+
+The following subsections will explain the details of the modeling language.
+
+\subsection{Modeling Components and Resources}
+
+
+\subsection{Modeling Performance Characteristics}
+
+\subsection{Parameterizing the Model}
+
+The goal of the Test Series Definition Modeling Language (TSDML) is to enable creation of series of test configurations from a single high level model. TSDML enables definition of test using a high-level domain specific modeling language. 
+
+The TSDML has the following properties:
+
+\begin{itemize}
+	\item Define application types
+	\item Form a template test case from those types
+	\item Define the connection association between applications by connection rules
+	\item Define association rules between applications and contexts
+	\item Define association rules between connections and logical networks
+	\item Define association rules between context and hosts
+	\item Define replication factors for the types, contexts and networks
+	\item Define the scope of the test series
+\end{itemize}
+
+
+TSDML is at the highest level of the test generation mechanism. Since the main goal is to form a template test case from the system model it is crucial to 

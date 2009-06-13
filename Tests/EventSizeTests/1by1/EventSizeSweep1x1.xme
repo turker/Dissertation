@@ -1,0 +1,2405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE project SYSTEM "mga.dtd">
+
+<project guid="{1F5D1F5B-0200-4C48-9129-2F234DEB7755}" cdate="Tue Feb 17 11:00:01 2009" mdate="Tue Feb 17 11:00:01 2009" version="" metaguid="{E9BE3F23-7F0F-4E72-9181-58501473EBAD}" metaversion="" metaname="TSDML">
+	<name>EventSizeTests</name>
+	<comment></comment>
+	<author></author>
+	<folder id="id-006a-00000001" relid="0x1" childrelidcntr="0x8" kind="RootFolder" guid="{2F99F5B3-E157-41b4-8549-DA18129B0736}">
+		<name>EventSizeTests</name>
+		<folder id="id-006a-00000002" relid="0x1" childrelidcntr="0xd" kind="TypeFolder" guid="{CB355710-57B0-49fc-976C-B28ECC400C52}">
+			<name>TypeFolder</name>
+			<model id="id-0065-00000003" kind="Application" guid="{CEBD39BE-6DB8-4c8b-9A85-E266976F4CA4}" relid="0x5" childrelidcntr="0xc">
+				<name>PeerTransport</name>
+				<attribute kind="ApplicationClassName" status="meta">
+					<value></value>
+				</attribute>
+				<attribute kind="ApplicationID" status="meta">
+					<value></value>
+				</attribute>
+				<attribute kind="ApplicationInstance" status="meta">
+					<value>0</value>
+				</attribute>
+				<attribute kind="Index" status="meta">
+					<value>0</value>
+				</attribute>
+				<attribute kind="MaximumExecutionTime" status="meta">
+					<value>0</value>
+				</attribute>
+				<attribute kind="MinimumExecutionTime" status="meta">
+					<value>0</value>
+				</attribute>
+				<attribute kind="MonitorPerformance" status="meta">
+					<value>true</value>
+				</attribute>
+				<attribute kind="Priority" status="meta">
+					<value></value>
+				</attribute>
+				<attribute kind="UniqueID" status="meta">
+					<value>0</value>
+				</attribute>
+				<atom id="id-0066-0000000c" kind="ThisInstance" role="ThisInstance" guid="{B29FAF2D-3F3C-429e-92D2-466B7BB375E3}" relid="0x1">
+					<name>ThisInstance</name>
+					<regnode name="PartRegs" isopaque="yes">
+						<value></value>
+						<regnode name="DataFlowView" isopaque="yes">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>89,502</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-0000000d" kind="AppBiDataPort" role="AppBiDataPort" guid="{5ABE10D9-06C8-4583-8FF7-1C41502F86A2}" relid="0x8">
+					<name>RU</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="DataFlowView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>156,247</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-0000000e" kind="AppBiDataPort" role="AppBiDataPort" guid="{9E3287B2-3BA6-4a96-953E-6CCB6B003618}" relid="0x9">
+					<name>BU</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="DataFlowView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>146,321</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-0000000f" kind="AppBiDataPort" role="AppBiDataPort" guid="{B4FB4A52-2313-428c-A259-A002B448A2FB}" relid="0xa">
+					<name>EVM</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="DataFlowView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>146,398</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-0000006d" kind="ProbePositive" role="ProbePositive" guid="{FB3AE0A4-9B10-4434-ACAE-E85A737FD21A}" relid="0xb">
+					<name>ProbePositive</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="DataFlowView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>56,266</value>
+							</regnode>
+						</regnode>
+						<regnode name="TestDefinitionView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>37,275</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-0000006f" kind="ProbeNegative" role="ProbeNegative" guid="{E32EBEB3-2890-4eb8-BB89-366E1E424722}" relid="0xc">
+					<name>ProbeNegative</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="DataFlowView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>56,364</value>
+							</regnode>
+						</regnode>
+						<regnode name="TestDefinitionView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>44,401</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+			</model>
+			<model id="id-0065-00000004" kind="Application" guid="{2A73359D-F440-4149-B00F-2740694DDE3E}" relid="0xa" childrelidcntr="0x1f">
+				<name>BU</name>
+				<attribute kind="ApplicationClassName" status="meta">
+					<value></value>
+				</attribute>
+				<attribute kind="ApplicationID" status="meta">
+					<value></value>
+				</attribute>
+				<attribute kind="ApplicationInstance" status="meta">
+					<value>0</value>
+				</attribute>
+				<attribute kind="Index" status="meta">
+					<value>0</value>
+				</attribute>
+				<attribute kind="MaximumExecutionTime" status="meta">
+					<value>0</value>
+				</attribute>
+				<attribute kind="MinimumExecutionTime" status="meta">
+					<value>0</value>
+				</attribute>
+				<attribute kind="MonitorPerformance" status="meta">
+					<value>true</value>
+				</attribute>
+				<attribute kind="Priority" status="meta">
+					<value></value>
+				</attribute>
+				<attribute kind="UniqueID" status="meta">
+					<value>0</value>
+				</attribute>
+				<atom id="id-0066-00000010" kind="ThisInstance" role="ThisInstance" guid="{6016B52A-F024-4e46-8609-C610C4ED4292}" relid="0x1">
+					<name>ThisInstance</name>
+					<regnode name="PartRegs" isopaque="yes">
+						<value></value>
+						<regnode name="DataFlowView" isopaque="yes">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>58,478</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-00000012" kind="Parameter" role="Parameter" guid="{D4D48A70-5752-4583-AEF8-9F4256DC97A5}" relid="0x14">
+					<name>EVM_ALLOCATE_CLEAR_PACKING</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="ApplicationView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>681,219</value>
+							</regnode>
+						</regnode>
+						<regnode name="DataFlowView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>707,259</value>
+							</regnode>
+						</regnode>
+						<regnode name="TestDefinitionView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>665,231</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<attribute kind="IsConfigurable" status="meta">
+						<value>true</value>
+					</attribute>
+					<attribute kind="IsTestParameter">
+						<value>true</value>
+					</attribute>
+					<attribute kind="ParameterType">
+						<value>double</value>
+					</attribute>
+					<attribute kind="ParameterValue" status="meta">
+						<value></value>
+					</attribute>
+					<attribute kind="isHidden" status="meta">
+						<value>false</value>
+					</attribute>
+				</atom>
+				<atom id="id-0066-00000013" kind="Parameter" role="Parameter" guid="{6AC12650-6CAD-47a9-9111-0E7D9B66F6F1}" relid="0x15">
+					<name>RU_SEND_PACKING</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="ApplicationView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>681,191</value>
+							</regnode>
+						</regnode>
+						<regnode name="DataFlowView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>707,350</value>
+							</regnode>
+						</regnode>
+						<regnode name="TestDefinitionView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>665,189</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<attribute kind="IsConfigurable" status="meta">
+						<value>true</value>
+					</attribute>
+					<attribute kind="IsTestParameter">
+						<value>true</value>
+					</attribute>
+					<attribute kind="ParameterType">
+						<value>double</value>
+					</attribute>
+					<attribute kind="ParameterValue" status="meta">
+						<value></value>
+					</attribute>
+					<attribute kind="isHidden" status="meta">
+						<value>false</value>
+					</attribute>
+				</atom>
+				<atom id="id-0066-00000015" kind="AppBiDataPort" role="AppBiDataPort" guid="{638B8A25-4BF0-4dd5-967E-C6684A42AD03}" relid="0x1a">
+					<name>PT</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="DataFlowView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>419,230</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-00000016" kind="AppBiDataPort" role="AppBiDataPort" guid="{C6A56F2E-81F2-4422-887F-AC2B6A6ABB75}" relid="0x1b">
+					<name>EVM</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="DataFlowView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>422,380</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-00000017" kind="AppBiDataPort" role="AppBiDataPort" guid="{C2950B44-FE20-4f5a-A811-FDFA65BB6A62}" relid="0x1c">
+					<name>RU</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="DataFlowView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>219,317</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-00000018" kind="ProbePositive" role="ProbePositive" guid="{EF450A8C-F5BE-4d5d-8704-A219938D3804}" relid="0x1e">
+					<name>ProbePositive</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="DataFlowView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>114,212</value>
+							</regnode>
+						</regnode>
+						<regnode name="TestDefinitionView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>114,212</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-00000019" kind="ProbeNegative" role="ProbeNegative" guid="{E042D2D3-B7F0-4ff8-ABE6-5ECCC1A59C60}" relid="0x1f">
+					<name>ProbeNegative</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="DataFlowView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>114,296</value>
+							</regnode>
+						</regnode>
+						<regnode name="TestDefinitionView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>114,296</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+			</model>
+			<model id="id-0065-00000005" kind="Application" guid="{AE476A11-6662-4973-8B17-06C347EEB427}" relid="0xb" childrelidcntr="0x15">
+				<name>EVM</name>
+				<attribute kind="ApplicationClassName" status="meta">
+					<value></value>
+				</attribute>
+				<attribute kind="ApplicationID" status="meta">
+					<value></value>
+				</attribute>
+				<attribute kind="ApplicationInstance" status="meta">
+					<value>0</value>
+				</attribute>
+				<attribute kind="Index" status="meta">
+					<value>0</value>
+				</attribute>
+				<attribute kind="MaximumExecutionTime" status="meta">
+					<value>0</value>
+				</attribute>
+				<attribute kind="MinimumExecutionTime" status="meta">
+					<value>0</value>
+				</attribute>
+				<attribute kind="MonitorPerformance" status="meta">
+					<value>true</value>
+				</attribute>
+				<attribute kind="Priority" status="meta">
+					<value></value>
+				</attribute>
+				<attribute kind="UniqueID" status="meta">
+					<value>0</value>
+				</attribute>
+				<atom id="id-0066-0000001a" kind="ThisInstance" role="ThisInstance" guid="{DEC5D5CD-281E-4ebd-88F7-047CC9E29E6F}" relid="0x1">
+					<name>ThisInstance</name>
+					<regnode name="PartRegs" isopaque="yes">
+						<value></value>
+						<regnode name="DataFlowView" isopaque="yes">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>44,506</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-0000001b" kind="AppBiDataPort" role="AppBiDataPort" guid="{BA61FA29-AE0F-4c3d-9C26-E161D17CBE60}" relid="0x4">
+					<name>BU</name>
+					<regnode name="PartRegs" isopaque="yes">
+						<value></value>
+						<regnode name="DataFlowView" isopaque="yes">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>433,356</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-0000001c" kind="Parameter" role="Parameter" guid="{7C45C9B9-5AC0-418f-A55F-A612C3E409D1}" relid="0xa">
+					<name>RU_READOUT_PACKING</name>
+					<regnode name="PartRegs" isopaque="yes">
+						<value></value>
+						<regnode name="ApplicationView" isopaque="yes">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>380,366</value>
+							</regnode>
+						</regnode>
+						<regnode name="DataFlowView" isopaque="yes">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>931,182</value>
+							</regnode>
+						</regnode>
+						<regnode name="TestDefinitionView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>875,224</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<attribute kind="IsConfigurable" status="meta">
+						<value>true</value>
+					</attribute>
+					<attribute kind="IsTestParameter">
+						<value>true</value>
+					</attribute>
+					<attribute kind="ParameterType">
+						<value>double</value>
+					</attribute>
+					<attribute kind="ParameterValue" status="meta">
+						<value></value>
+					</attribute>
+					<attribute kind="isHidden" status="meta">
+						<value>false</value>
+					</attribute>
+				</atom>
+				<atom id="id-0066-0000001d" kind="Parameter" role="Parameter" guid="{88ACF7FC-4C8A-4ef6-B865-5CF17C717105}" relid="0xb">
+					<name>nbEvtIdsInBuilder</name>
+					<regnode name="PartRegs" isopaque="yes">
+						<value></value>
+						<regnode name="ApplicationView" isopaque="yes">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>408,394</value>
+							</regnode>
+						</regnode>
+						<regnode name="DataFlowView" isopaque="yes">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>735,182</value>
+							</regnode>
+						</regnode>
+						<regnode name="TestDefinitionView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>700,224</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<attribute kind="IsConfigurable" status="meta">
+						<value>true</value>
+					</attribute>
+					<attribute kind="IsTestParameter">
+						<value>true</value>
+					</attribute>
+					<attribute kind="ParameterType">
+						<value>double</value>
+					</attribute>
+					<attribute kind="ParameterValue" status="meta">
+						<value></value>
+					</attribute>
+					<attribute kind="isHidden" status="meta">
+						<value>false</value>
+					</attribute>
+				</atom>
+				<atom id="id-0066-0000001e" kind="AppBiDataPort" role="AppBiDataPort" guid="{577382EB-BFDB-47fd-A92E-5240ACCD18F1}" relid="0xc">
+					<name>RU</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="DataFlowView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>216,286</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-0000001f" kind="AppBiDataPort" role="AppBiDataPort" guid="{CB456762-B5DB-4a09-AC34-07ED214585A3}" relid="0xd">
+					<name>PT</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="DataFlowView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>569,457</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-00000020" kind="Parameter" role="Parameter" guid="{29CE0BDE-1E13-469a-88B3-986293BDC05B}" relid="0x11">
+					<name>MAX_BUS</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="DataFlowView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>742,357</value>
+							</regnode>
+						</regnode>
+						<regnode name="TestDefinitionView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>707,420</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<attribute kind="IsConfigurable" status="meta">
+						<value>true</value>
+					</attribute>
+					<attribute kind="IsTestParameter">
+						<value>true</value>
+					</attribute>
+					<attribute kind="ParameterType">
+						<value>double</value>
+					</attribute>
+					<attribute kind="ParameterValue">
+						<value>8</value>
+					</attribute>
+					<attribute kind="isHidden" status="meta">
+						<value>false</value>
+					</attribute>
+				</atom>
+				<atom id="id-0066-00000021" kind="Parameter" role="Parameter" guid="{26F6EA7F-276D-4b29-AAFB-C113FDCB8E69}" relid="0xf">
+					<name>maxEvtsUnderConstruction</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="DataFlowView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>938,357</value>
+							</regnode>
+						</regnode>
+						<regnode name="TestDefinitionView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>875,322</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<attribute kind="IsConfigurable" status="meta">
+						<value>true</value>
+					</attribute>
+					<attribute kind="IsTestParameter">
+						<value>true</value>
+					</attribute>
+					<attribute kind="ParameterType">
+						<value>double</value>
+					</attribute>
+					<attribute kind="ParameterValue">
+						<value>64</value>
+					</attribute>
+					<attribute kind="isHidden" status="meta">
+						<value>false</value>
+					</attribute>
+				</atom>
+				<atom id="id-0066-00000022" kind="Parameter" role="Parameter" guid="{C4D09DD9-3877-4a67-9378-359C05B4179C}" relid="0xe">
+					<name>MAX_RUS</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="DataFlowView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>735,266</value>
+							</regnode>
+						</regnode>
+						<regnode name="TestDefinitionView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>707,322</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<attribute kind="IsConfigurable" status="meta">
+						<value>true</value>
+					</attribute>
+					<attribute kind="IsTestParameter">
+						<value>true</value>
+					</attribute>
+					<attribute kind="ParameterType">
+						<value>double</value>
+					</attribute>
+					<attribute kind="ParameterValue">
+						<value>8</value>
+					</attribute>
+					<attribute kind="isHidden" status="meta">
+						<value>false</value>
+					</attribute>
+				</atom>
+				<atom id="id-0066-00000023" kind="Parameter" role="Parameter" guid="{76197B03-741C-452e-BDA5-9D653214066E}" relid="0x10">
+					<name>DEFAULT_NB_EVENTS</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="DataFlowView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>931,266</value>
+							</regnode>
+						</regnode>
+						<regnode name="TestDefinitionView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>875,413</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<attribute kind="IsConfigurable" status="meta">
+						<value>true</value>
+					</attribute>
+					<attribute kind="IsTestParameter">
+						<value>true</value>
+					</attribute>
+					<attribute kind="ParameterType">
+						<value>double</value>
+					</attribute>
+					<attribute kind="ParameterValue">
+						<value>64</value>
+					</attribute>
+					<attribute kind="isHidden" status="meta">
+						<value>false</value>
+					</attribute>
+				</atom>
+				<atom id="id-0066-00000024" kind="Parameter" role="Parameter" guid="{A051E9EF-E00F-4625-99FE-BCF4E501D8A1}" relid="0x13">
+					<name>MAX_BU_RESOURCES</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="DataFlowView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>840,455</value>
+							</regnode>
+						</regnode>
+						<regnode name="TestDefinitionView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>812,518</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<attribute kind="IsConfigurable" status="meta">
+						<value>true</value>
+					</attribute>
+					<attribute kind="IsTestParameter" status="meta">
+						<value>false</value>
+					</attribute>
+					<attribute kind="ParameterType" status="meta">
+						<value></value>
+					</attribute>
+					<attribute kind="ParameterValue" status="meta">
+						<value></value>
+					</attribute>
+					<attribute kind="isHidden" status="meta">
+						<value>false</value>
+					</attribute>
+				</atom>
+				<atom id="id-0066-00000069" kind="ProbeNegative" role="ProbeNegative" guid="{05B48886-8588-4369-8164-CE327C7CCF62}" relid="0x14">
+					<name>ProbeNegative</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="DataFlowView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>93,450</value>
+							</regnode>
+						</regnode>
+						<regnode name="TestDefinitionView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>93,450</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-0000006b" kind="ProbePositive" role="ProbePositive" guid="{98152796-C37F-4757-BC96-F9C2AFE67A72}" relid="0x15">
+					<name>ProbePositive</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="DataFlowView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>93,366</value>
+							</regnode>
+						</regnode>
+						<regnode name="TestDefinitionView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>93,366</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+			</model>
+			<model id="id-0065-00000006" kind="Application" guid="{98826FD8-FFAE-462e-9B7C-931FF96E8C08}" relid="0xc" childrelidcntr="0x12">
+				<name>RU</name>
+				<attribute kind="ApplicationClassName" status="meta">
+					<value></value>
+				</attribute>
+				<attribute kind="ApplicationID" status="meta">
+					<value></value>
+				</attribute>
+				<attribute kind="ApplicationInstance" status="meta">
+					<value>0</value>
+				</attribute>
+				<attribute kind="Index" status="meta">
+					<value>0</value>
+				</attribute>
+				<attribute kind="MaximumExecutionTime" status="meta">
+					<value>0</value>
+				</attribute>
+				<attribute kind="MinimumExecutionTime" status="meta">
+					<value>0</value>
+				</attribute>
+				<attribute kind="MonitorPerformance" status="meta">
+					<value>true</value>
+				</attribute>
+				<attribute kind="Priority" status="meta">
+					<value></value>
+				</attribute>
+				<attribute kind="UniqueID" status="meta">
+					<value>0</value>
+				</attribute>
+				<atom id="id-0066-00000025" kind="ThisInstance" role="ThisInstance" guid="{B9AC8AAE-D238-4914-873D-22D4CFFBCB2C}" relid="0x1">
+					<name>ThisInstance</name>
+					<regnode name="PartRegs" isopaque="yes">
+						<value></value>
+						<regnode name="DataFlowView" isopaque="yes">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>61,383</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-00000026" kind="AppBiDataPort" role="AppBiDataPort" guid="{696DCBF7-52E3-4174-8EAA-0554D32F7548}" relid="0x6">
+					<name>EVM</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="DataFlowView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>440,391</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-00000027" kind="Parameter" role="Parameter" guid="{044919FF-AAC5-4b9a-B9FF-BEDE56E0920E}" relid="0x9">
+					<name>blockFIFOCapacity</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="ApplicationView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>681,177</value>
+							</regnode>
+						</regnode>
+						<regnode name="DataFlowView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>681,177</value>
+							</regnode>
+						</regnode>
+						<regnode name="TestDefinitionView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>681,177</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<attribute kind="IsConfigurable" status="meta">
+						<value>true</value>
+					</attribute>
+					<attribute kind="IsTestParameter">
+						<value>true</value>
+					</attribute>
+					<attribute kind="ParameterType">
+						<value>double</value>
+					</attribute>
+					<attribute kind="ParameterValue" status="meta">
+						<value></value>
+					</attribute>
+					<attribute kind="isHidden" status="meta">
+						<value>false</value>
+					</attribute>
+				</atom>
+				<atom id="id-0066-00000028" kind="AppBiDataPort" role="AppBiDataPort" guid="{0E16C2E3-FC9F-4941-B07A-BD12A1B398BB}" relid="0xb">
+					<name>BU</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="DataFlowView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>440,314</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-00000029" kind="AppBiDataPort" role="AppBiDataPort" guid="{A9A470FB-BD83-456c-B564-FB63F7CEB192}" relid="0xc">
+					<name>PT</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="DataFlowView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>443,226</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-0000002a" kind="ProbePositive" role="ProbePositive" guid="{21116F5B-1850-4d80-9422-ECC61489E437}" relid="0x11">
+					<name>ProbePositive</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="DataFlowView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>254,289</value>
+							</regnode>
+						</regnode>
+						<regnode name="TestDefinitionView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>254,289</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-0000002b" kind="ProbeNegative" role="ProbeNegative" guid="{EA24CF5C-2417-4305-8386-CDB9357C935F}" relid="0x12">
+					<name>ProbeNegative</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="DataFlowView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>254,387</value>
+							</regnode>
+						</regnode>
+						<regnode name="TestDefinitionView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>254,387</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+			</model>
+		</folder>
+		<folder id="id-006a-00000003" relid="0x5" childrelidcntr="0x2" kind="HardwareResourceLibrary" guid="{9DAF03FC-942E-48b7-89E1-ECBD74EAB38B}">
+			<name>NewHardware Resource Library</name>
+			<model id="id-0065-00000008" kind="Node" guid="{BA50EA74-33D1-4154-97D9-576B5F2AFED7}" relid="0x1" childrelidcntr="0x4">
+				<name>Node 1</name>
+				<regnode name="guid" isopaque="yes">
+					<value>{D7BFD877-EF0C-4f50-819C-07C7D9B38AB6}</value>
+				</regnode>
+				<attribute kind="PriorityPreference" status="meta">
+					<value>0</value>
+				</attribute>
+				<atom id="id-0066-0000002f" kind="NIC" role="NIC" guid="{38E6A004-DF62-4ae4-9504-056713B0FA61}" relid="0x1">
+					<name>NIC</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="EnabledResourcesAspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>412,182</value>
+							</regnode>
+						</regnode>
+						<regnode name="ResourceView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>195,266</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<regnode name="autorouterPref" isopaque="yes">
+						<value>neswNESW</value>
+					</regnode>
+					<attribute kind="IPAddress">
+						<value>192.168.1.1</value>
+					</attribute>
+					<attribute kind="MaxNumberOfContexts" status="meta">
+						<value>0</value>
+					</attribute>
+					<attribute kind="NetworkType" status="meta">
+						<value></value>
+					</attribute>
+					<attribute kind="PortRangeEnd" status="meta">
+						<value>0</value>
+					</attribute>
+					<attribute kind="PortRangeStart" status="meta">
+						<value>0</value>
+					</attribute>
+					<attribute kind="PriorityPreference" status="meta">
+						<value>0</value>
+					</attribute>
+				</atom>
+				<atom id="id-0066-00000030" kind="Processor" role="Processor" guid="{04149F7F-9DB9-4a1c-ADFC-3ED84C0AE558}" relid="0x3">
+					<name>Processor</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="EnabledResourcesAspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>534,114</value>
+							</regnode>
+						</regnode>
+						<regnode name="ResourceView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>719,257</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<attribute kind="IP" status="meta">
+						<value></value>
+					</attribute>
+				</atom>
+			</model>
+			<model id="id-0065-00000010" kind="Node" guid="{0162A239-111C-4c01-B4B4-179BF596707A}" relid="0x2" childrelidcntr="0x2">
+				<name>Node 2</name>
+				<attribute kind="PriorityPreference" status="meta">
+					<value>0</value>
+				</attribute>
+				<atom id="id-0066-00000067" kind="Processor" role="Processor" guid="{44E5E601-23DE-4a14-A5E7-3A7C43E5A2DC}" relid="0x1">
+					<name>Processor</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="ResourceView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>579,285</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<attribute kind="IP" status="meta">
+						<value></value>
+					</attribute>
+				</atom>
+				<atom id="id-0066-00000068" kind="NIC" role="NIC" guid="{CB6C00EA-C125-47ad-9BC0-E7AEA9D204AA}" relid="0x2">
+					<name>NIC</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="ResourceView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>174,287</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<attribute kind="IPAddress" status="meta">
+						<value></value>
+					</attribute>
+					<attribute kind="MaxNumberOfContexts" status="meta">
+						<value>0</value>
+					</attribute>
+					<attribute kind="NetworkType" status="meta">
+						<value></value>
+					</attribute>
+					<attribute kind="PortRangeEnd" status="meta">
+						<value>0</value>
+					</attribute>
+					<attribute kind="PortRangeStart" status="meta">
+						<value>0</value>
+					</attribute>
+					<attribute kind="PriorityPreference" status="meta">
+						<value>0</value>
+					</attribute>
+				</atom>
+			</model>
+		</folder>
+		<folder id="id-006a-00000004" relid="0x7" childrelidcntr="0x1" kind="ResourceConfigurations" guid="{C443B626-FEE8-410f-B0F7-49FC9304432C}">
+			<name>NewResourceConfigurations</name>
+			<model id="id-0065-00000009" kind="ResourceConfiguration" guid="{C51CEC53-BDD5-4aa5-944E-1F91231524EC}" relid="0x1" childrelidcntr="0x3">
+				<name>NewResourceConfiguration</name>
+				<reference id="id-0067-00000001" kind="NodeReference" role="NodeReference" guid="{F1B54B99-2F80-4d0b-98E5-CBB3E2B88609}" relid="0x2" referred="id-0065-00000008">
+					<name>Node 1</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="ResourceConfigurationAspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>215,159</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</reference>
+				<reference id="id-0067-00000005" kind="NodeReference" role="NodeReference" guid="{3850AD3D-485A-4c85-BF63-B2A2554F7DE5}" relid="0x3" referred="id-0065-00000010">
+					<name>Node 2</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="ResourceConfigurationAspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>208,348</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</reference>
+			</model>
+		</folder>
+		<folder id="id-006a-00000005" relid="0x8" childrelidcntr="0xa" kind="TestSeriesDefinitionFolder" guid="{A25E5F30-381F-4f2b-B9BD-ED3D34C3C86E}">
+			<name>NewTest Series Definitions</name>
+			<model id="id-0065-00000023" kind="TestSeriesDefinition" guid="{0674F56A-651D-490c-9D62-52FF0B1CC6FC}" relid="0x9" childrelidcntr="0xbb">
+				<name>EventSizeSweep_1x1</name>
+				<model id="id-0065-00000024" kind="InputGenerator" role="InputGenerator" guid="{0464C21F-F09F-4afa-B273-51FD6FB1B744}" relid="0x89" childrelidcntr="0x23">
+					<name>InputGenerator</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="PerformanceView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>97,370</value>
+							</regnode>
+						</regnode>
+						<regnode name="TestSeriesDefinitionView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>111,489</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<atom id="id-0066-00000123" kind="InputGeneratorParameter" role="InputGeneratorParameter" guid="{D7B565C2-7790-4259-B97D-4A806E3B99A5}" relid="0x19">
+						<name>BlockSize</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="TestSeriesDefinitionView" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>791,189</value>
+								</regnode>
+							</regnode>
+						</regnode>
+						<attribute kind="Value">
+							<value>4096</value>
+						</attribute>
+					</atom>
+					<atom id="id-0066-00000124" kind="InputGeneratorParameter" role="InputGeneratorParameter" guid="{CCA8F4E5-CD21-40f7-9994-4C0179064AB2}" relid="0x1d">
+						<name>EventSizeSigma</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="TestSeriesDefinitionView" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>791,483</value>
+								</regnode>
+							</regnode>
+						</regnode>
+						<attribute kind="Value" status="meta">
+							<value></value>
+						</attribute>
+					</atom>
+					<atom id="id-0066-00000125" kind="InputGeneratorParameter" role="InputGeneratorParameter" guid="{4D8699E5-FED8-4413-83FA-A44D97E8E56D}" relid="0x1b">
+						<name>EventSizeMean</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="TestSeriesDefinitionView" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>791,392</value>
+								</regnode>
+							</regnode>
+						</regnode>
+						<attribute kind="Value" status="meta">
+							<value></value>
+						</attribute>
+					</atom>
+					<atom id="id-0066-00000126" kind="InputGeneratorParameter" role="InputGeneratorParameter" guid="{BB38C222-BB92-4f5d-A495-460BCD3C34D8}" relid="0x1a">
+						<name>NumberOfDataSources</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="TestSeriesDefinitionView" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>791,294</value>
+								</regnode>
+							</regnode>
+						</regnode>
+						<attribute kind="Value">
+							<value>8</value>
+						</attribute>
+					</atom>
+					<atom id="id-0066-00000127" kind="InputGeneratorParameterSweeper" role="InputGeneratorParameterSweeper" guid="{D2F201CF-E0A0-46ea-A05A-9FB6CEFE3C26}" relid="0x20">
+						<name>EventSizeSigmaSweeper</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="TestSeriesDefinitionView" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>535,479</value>
+								</regnode>
+							</regnode>
+						</regnode>
+						<attribute kind="FunctionType" status="meta">
+							<value>Internal Function</value>
+						</attribute>
+						<attribute kind="Value">
+							<value>src*1300</value>
+						</attribute>
+					</atom>
+					<atom id="id-0066-00000128" kind="RandomDistribution" role="RandomDistribution" guid="{0E852565-E563-476a-B17C-7D12BB5D60C6}" relid="0x1c">
+						<name>RandomDistribution</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="TestSeriesDefinitionView" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>301,448</value>
+								</regnode>
+							</regnode>
+						</regnode>
+						<attribute kind="DistributionType" status="meta">
+							<value>Lognormal</value>
+						</attribute>
+					</atom>
+					<atom id="id-0066-00000129" kind="InputGeneratorParameterSweeper" role="InputGeneratorParameterSweeper" guid="{DB8A79F6-7B62-4671-8960-606790A8EABF}" relid="0x15">
+						<name>EventSizeMeanSweeper</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="TestSeriesDefinitionView" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>528,374</value>
+								</regnode>
+							</regnode>
+						</regnode>
+						<attribute kind="FunctionType" status="meta">
+							<value>Internal Function</value>
+						</attribute>
+						<attribute kind="Value">
+							<value>src*83886</value>
+						</attribute>
+					</atom>
+					<reference id="id-0067-00000011" kind="TestIteratorReference" role="TestIteratorReference" guid="{D4434E7F-2CB8-433d-A14F-3E832B04C5C5}" relid="0xb" referred="id-0066-00000118">
+						<name>TestIterator</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="TestSeriesDefinitionView" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>298,137</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</reference>
+					<connection id="id-0068-000000b4" kind="SweeperToInputGeneratorParameterConn" role="SweeperToInputGeneratorParameterConn" guid="{59A26DEE-DA07-4684-AE3F-A3152B08CAEB}" relid="0x22">
+						<name>SweeperToInputGeneratorParameterConn</name>
+						<regnode name="autorouterPref" isopaque="yes">
+							<value>Ew</value>
+						</regnode>
+						<connpoint role="dst" target="id-0066-00000125"/>
+						<connpoint role="src" target="id-0066-00000129"/>
+					</connection>
+					<connection id="id-0068-000000b5" kind="SweeperToInputGeneratorParameterConn" role="SweeperToInputGeneratorParameterConn" guid="{913757DE-09B2-4491-9A2E-315FA1BF9DFD}" relid="0x23">
+						<name>SweeperToInputGeneratorParameterConn</name>
+						<regnode name="autorouterPref" isopaque="yes">
+							<value>Ew</value>
+						</regnode>
+						<connpoint role="dst" target="id-0066-00000124"/>
+						<connpoint role="src" target="id-0066-00000127"/>
+					</connection>
+					<connection id="id-0068-000000b6" kind="TestIteratorToSweeperConn" role="TestIteratorToSweeperConn" guid="{57D523F1-EAB9-4655-A3A5-815310DF8071}" relid="0x16">
+						<name>TestIteratorToSweeperConn</name>
+						<connpoint role="dst" target="id-0066-00000129"/>
+						<connpoint role="src" target="id-0067-00000011"/>
+					</connection>
+				</model>
+				<model id="id-0065-00000025" kind="Application" role="Application" guid="{969F6348-E0A3-452c-999E-0559C5686E97}" derivedfrom="id-0065-00000004" isinstance="no" isprimary="yes" relid="0x54" childrelidcntr="0xb">
+					<name>BU</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="ContainmentAspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>553,112</value>
+							</regnode>
+						</regnode>
+						<regnode name="DeploymentView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>392,84</value>
+							</regnode>
+						</regnode>
+						<regnode name="PerformanceView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>581,175</value>
+							</regnode>
+						</regnode>
+						<regnode name="TestSeriesDefinitionView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>686,238</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<attribute kind="ApplicationClassName">
+						<value>BU</value>
+					</attribute>
+					<attribute kind="ApplicationID">
+						<value>11</value>
+					</attribute>
+					<attribute kind="ApplicationInstance" status="meta">
+						<value>0</value>
+					</attribute>
+					<attribute kind="Index" status="meta">
+						<value>0</value>
+					</attribute>
+					<attribute kind="MaximumExecutionTime">
+						<value>15</value>
+					</attribute>
+					<attribute kind="MinimumExecutionTime">
+						<value>3</value>
+					</attribute>
+					<attribute kind="MonitorPerformance" status="meta">
+						<value>true</value>
+					</attribute>
+					<attribute kind="Priority" status="meta">
+						<value></value>
+					</attribute>
+					<attribute kind="UniqueID" status="meta">
+						<value>0</value>
+					</attribute>
+					<atom id="id-0066-0000012b" kind="ThisInstance" role="ThisInstance" guid="{78B1A573-C91E-43b7-93C2-B5AC049671D1}" derivedfrom="id-0066-00000010" isinstance="no" isprimary="no">
+						<name>ThisInstance</name>
+					</atom>
+					<atom id="id-0066-0000012c" kind="Parameter" role="Parameter" guid="{FED5A9A3-86D7-4bf9-B4BE-484E69BE488A}" derivedfrom="id-0066-00000012" isinstance="no" isprimary="no">
+						<name>EVM_ALLOCATE_CLEAR_PACKING</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="TestDefinitionView" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>700,420</value>
+								</regnode>
+							</regnode>
+						</regnode>
+						<attribute kind="IsConfigurable" status="meta">
+							<value>true</value>
+						</attribute>
+						<attribute kind="IsTestParameter" status="inherited">
+							<value>true</value>
+						</attribute>
+						<attribute kind="ParameterType" status="inherited">
+							<value>double</value>
+						</attribute>
+						<attribute kind="ParameterValue">
+							<value>8</value>
+						</attribute>
+						<attribute kind="isHidden">
+							<value>false</value>
+						</attribute>
+					</atom>
+					<atom id="id-0066-0000012d" kind="Parameter" role="Parameter" guid="{59B494AD-6879-4ac5-B0D8-CAA930F37951}" derivedfrom="id-0066-00000013" isinstance="no" isprimary="no">
+						<name>RU_SEND_PACKING</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="DataFlowView" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>707,357</value>
+								</regnode>
+							</regnode>
+							<regnode name="TestDefinitionView" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>707,322</value>
+								</regnode>
+							</regnode>
+						</regnode>
+						<attribute kind="IsConfigurable" status="meta">
+							<value>true</value>
+						</attribute>
+						<attribute kind="IsTestParameter" status="inherited">
+							<value>true</value>
+						</attribute>
+						<attribute kind="ParameterType" status="inherited">
+							<value>double</value>
+						</attribute>
+						<attribute kind="ParameterValue">
+							<value>8</value>
+						</attribute>
+						<attribute kind="isHidden" status="meta">
+							<value>false</value>
+						</attribute>
+					</atom>
+					<atom id="id-0066-0000012e" kind="ProbeNegative" role="ProbeNegative" guid="{EAF9B9B5-CC90-4825-B510-A5B7DCFEAA09}" derivedfrom="id-0066-00000019" isinstance="no" isprimary="no">
+						<name>ProbeNegative</name>
+					</atom>
+					<atom id="id-0066-0000012f" kind="ProbePositive" role="ProbePositive" guid="{532BF31A-A7C0-4ae6-8556-0A67324DDB9F}" derivedfrom="id-0066-00000018" isinstance="no" isprimary="no">
+						<name>ProbePositive</name>
+					</atom>
+					<atom id="id-0066-00000130" kind="AppBiDataPort" role="AppBiDataPort" guid="{F2FB3A50-143C-49e7-9292-39A4FD62CCE3}" derivedfrom="id-0066-00000017" isinstance="no" isprimary="no">
+						<name>RU</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="DataFlowView" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>363,307</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</atom>
+					<atom id="id-0066-00000131" kind="AppBiDataPort" role="AppBiDataPort" guid="{E27C64CF-0837-4433-A0E4-E609D41424B2}" derivedfrom="id-0066-00000016" isinstance="no" isprimary="no">
+						<name>EVM</name>
+					</atom>
+					<atom id="id-0066-00000132" kind="AppBiDataPort" role="AppBiDataPort" guid="{88B94325-39AF-43f9-AEA0-8ECF2D6ED4E0}" derivedfrom="id-0066-00000015" isinstance="no" isprimary="no">
+						<name>PT</name>
+					</atom>
+					<reference id="id-0067-00000012" kind="IteratorReference" role="IteratorReference" guid="{893C5BA4-3327-4c7b-88A2-CA52115A40A2}" relid="0x9" referred="id-0066-00000118">
+						<name>IteratorReference</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="TestDefinitionView" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>303,177</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</reference>
+				</model>
+				<model id="id-0065-00000026" kind="Application" role="Application" guid="{F316C806-953B-4ffa-83A2-D0F972C12DBD}" derivedfrom="id-0065-00000006" isinstance="no" isprimary="yes" relid="0x56" childrelidcntr="0x2">
+					<name>RU</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="ContainmentAspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>371,112</value>
+							</regnode>
+						</regnode>
+						<regnode name="DeploymentView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>532,84</value>
+							</regnode>
+						</regnode>
+						<regnode name="PerformanceView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>196,196</value>
+							</regnode>
+						</regnode>
+						<regnode name="TestSeriesDefinitionView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>287,238</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<attribute kind="ApplicationClassName">
+						<value>RU</value>
+					</attribute>
+					<attribute kind="ApplicationID">
+						<value>10</value>
+					</attribute>
+					<attribute kind="ApplicationInstance" status="meta">
+						<value>0</value>
+					</attribute>
+					<attribute kind="Index" status="meta">
+						<value>0</value>
+					</attribute>
+					<attribute kind="MaximumExecutionTime">
+						<value>10</value>
+					</attribute>
+					<attribute kind="MinimumExecutionTime">
+						<value>3</value>
+					</attribute>
+					<attribute kind="MonitorPerformance" status="meta">
+						<value>true</value>
+					</attribute>
+					<attribute kind="Priority" status="meta">
+						<value></value>
+					</attribute>
+					<attribute kind="UniqueID" status="meta">
+						<value>0</value>
+					</attribute>
+					<atom id="id-0066-00000133" kind="ThisInstance" role="ThisInstance" guid="{FE77B07A-493F-400e-BDB8-88CEDFB9ACB3}" derivedfrom="id-0066-00000025" isinstance="no" isprimary="no">
+						<name>ThisInstance</name>
+					</atom>
+					<atom id="id-0066-00000134" kind="Parameter" role="Parameter" guid="{1F54F233-9FE0-44e2-835D-4F594087C1E2}" derivedfrom="id-0066-00000027" isinstance="no" isprimary="no">
+						<name>blockFIFOCapacity</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="DataFlowView" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>763,252</value>
+								</regnode>
+							</regnode>
+							<regnode name="TestDefinitionView" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>693,175</value>
+								</regnode>
+							</regnode>
+						</regnode>
+						<attribute kind="IsConfigurable" status="meta">
+							<value>true</value>
+						</attribute>
+						<attribute kind="IsTestParameter" status="inherited">
+							<value>true</value>
+						</attribute>
+						<attribute kind="ParameterType" status="inherited">
+							<value>double</value>
+						</attribute>
+						<attribute kind="ParameterValue">
+							<value>4096</value>
+						</attribute>
+						<attribute kind="isHidden" status="meta">
+							<value>false</value>
+						</attribute>
+					</atom>
+					<atom id="id-0066-00000135" kind="ProbeNegative" role="ProbeNegative" guid="{00A1FA4E-BB58-4aa9-9B9F-859803B9BEA0}" derivedfrom="id-0066-0000002b" isinstance="no" isprimary="no">
+						<name>ProbeNegative</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="DataFlowView" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>161,385</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</atom>
+					<atom id="id-0066-00000136" kind="AppBiDataPort" role="AppBiDataPort" guid="{786B00D3-6A57-4043-9531-AD6FECDF7D53}" derivedfrom="id-0066-00000026" isinstance="no" isprimary="no">
+						<name>EVM</name>
+					</atom>
+					<atom id="id-0066-00000137" kind="AppBiDataPort" role="AppBiDataPort" guid="{6A1824F3-5F9D-4da6-BEAF-38322EB70700}" derivedfrom="id-0066-00000029" isinstance="no" isprimary="no">
+						<name>PT</name>
+					</atom>
+					<atom id="id-0066-00000138" kind="ProbePositive" role="ProbePositive" guid="{15720DA3-0044-400f-AEFB-143C62F1FF01}" derivedfrom="id-0066-0000002a" isinstance="no" isprimary="no">
+						<name>ProbePositive</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="DataFlowView" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>119,280</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</atom>
+					<atom id="id-0066-00000139" kind="AppBiDataPort" role="AppBiDataPort" guid="{ABAF4567-FD96-4cba-8BB5-8DCC314BAC36}" derivedfrom="id-0066-00000028" isinstance="no" isprimary="no">
+						<name>BU</name>
+					</atom>
+				</model>
+				<model id="id-0065-00000027" kind="Application" role="Application" guid="{2F3568CA-B707-4a18-A49C-BD5823C60699}" derivedfrom="id-0065-00000003" isinstance="no" isprimary="yes" relid="0x57" childrelidcntr="0x0">
+					<name>PeerTransport</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="ContainmentAspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>756,112</value>
+							</regnode>
+						</regnode>
+						<regnode name="DeploymentView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>672,84</value>
+							</regnode>
+						</regnode>
+						<regnode name="PerformanceView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>714,63</value>
+							</regnode>
+						</regnode>
+						<regnode name="TestSeriesDefinitionView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>959,49</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<attribute kind="ApplicationClassName">
+						<value>PT</value>
+					</attribute>
+					<attribute kind="ApplicationID">
+						<value>13</value>
+					</attribute>
+					<attribute kind="ApplicationInstance" status="meta">
+						<value>0</value>
+					</attribute>
+					<attribute kind="Index" status="meta">
+						<value>0</value>
+					</attribute>
+					<attribute kind="MaximumExecutionTime">
+						<value>5</value>
+					</attribute>
+					<attribute kind="MinimumExecutionTime">
+						<value>1</value>
+					</attribute>
+					<attribute kind="MonitorPerformance">
+						<value>false</value>
+					</attribute>
+					<attribute kind="Priority" status="meta">
+						<value></value>
+					</attribute>
+					<attribute kind="UniqueID" status="meta">
+						<value>0</value>
+					</attribute>
+					<atom id="id-0066-0000013d" kind="ThisInstance" role="ThisInstance" guid="{1D56D454-10A5-4c49-8D6F-5E538178CDE5}" derivedfrom="id-0066-0000000c" isinstance="no" isprimary="no">
+						<name>ThisInstance</name>
+					</atom>
+					<atom id="id-0066-0000013e" kind="AppBiDataPort" role="AppBiDataPort" guid="{E1D993C3-4ED3-49d8-8CD1-939D970B96C1}" derivedfrom="id-0066-0000000e" isinstance="no" isprimary="no">
+						<name>BU</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="DataFlowView" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>111,321</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</atom>
+					<atom id="id-0066-0000013f" kind="AppBiDataPort" role="AppBiDataPort" guid="{68D27CB5-F5B5-4934-BE4C-AC4C6D7D81B7}" derivedfrom="id-0066-0000000d" isinstance="no" isprimary="no">
+						<name>RU</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="DataFlowView" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>118,244</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</atom>
+					<atom id="id-0066-00000140" kind="ProbePositive" role="ProbePositive" guid="{EE8BA262-5374-4713-AA1B-10151025BC5E}" derivedfrom="id-0066-0000006d" isinstance="no" isprimary="no">
+						<name>ProbePositive</name>
+					</atom>
+					<atom id="id-0066-00000141" kind="ProbeNegative" role="ProbeNegative" guid="{5998D43D-1D4E-435f-85FE-265D395D97E1}" derivedfrom="id-0066-0000006f" isinstance="no" isprimary="no">
+						<name>ProbeNegative</name>
+					</atom>
+					<atom id="id-0066-00000142" kind="AppBiDataPort" role="AppBiDataPort" guid="{11EC41D3-5493-4689-965A-B0EC91378932}" derivedfrom="id-0066-0000000f" isinstance="no" isprimary="no">
+						<name>EVM</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="DataFlowView" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>111,398</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</atom>
+				</model>
+				<model id="id-0065-00000028" kind="Application" role="Application" guid="{B5C55548-34A6-4d82-A8C0-8B53C0818522}" derivedfrom="id-0065-00000005" isinstance="no" isprimary="yes" relid="0x55" childrelidcntr="0x7">
+					<name>EVM</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="ContainmentAspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>196,112</value>
+							</regnode>
+						</regnode>
+						<regnode name="DeploymentView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>252,84</value>
+							</regnode>
+						</regnode>
+						<regnode name="PerformanceView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>385,511</value>
+							</regnode>
+						</regnode>
+						<regnode name="TestSeriesDefinitionView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>532,476</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<attribute kind="ApplicationClassName">
+						<value>EVM</value>
+					</attribute>
+					<attribute kind="ApplicationID">
+						<value>12</value>
+					</attribute>
+					<attribute kind="ApplicationInstance" status="meta">
+						<value>0</value>
+					</attribute>
+					<attribute kind="Index" status="meta">
+						<value>0</value>
+					</attribute>
+					<attribute kind="MaximumExecutionTime">
+						<value>10</value>
+					</attribute>
+					<attribute kind="MinimumExecutionTime">
+						<value>3</value>
+					</attribute>
+					<attribute kind="MonitorPerformance" status="meta">
+						<value>true</value>
+					</attribute>
+					<attribute kind="Priority" status="meta">
+						<value></value>
+					</attribute>
+					<attribute kind="UniqueID" status="meta">
+						<value>0</value>
+					</attribute>
+					<atom id="id-0066-00000143" kind="Parameter" role="Parameter" guid="{81BA632E-CE45-420f-B9E5-D4ABA66BB84A}" derivedfrom="id-0066-00000024" isinstance="no" isprimary="no">
+						<name>MAX_BU_RESOURCES</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="DataFlowView" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>889,497</value>
+								</regnode>
+							</regnode>
+						</regnode>
+						<attribute kind="IsConfigurable" status="meta">
+							<value>true</value>
+						</attribute>
+						<attribute kind="IsTestParameter" status="meta">
+							<value>false</value>
+						</attribute>
+						<attribute kind="ParameterType">
+							<value>double</value>
+						</attribute>
+						<attribute kind="ParameterValue">
+							<value>8</value>
+						</attribute>
+						<attribute kind="isHidden" status="meta">
+							<value>false</value>
+						</attribute>
+					</atom>
+					<atom id="id-0066-00000144" kind="Parameter" role="Parameter" guid="{C35D106F-56FC-45b5-83DE-9B7639F5F945}" derivedfrom="id-0066-00000023" isinstance="no" isprimary="no">
+						<name>DEFAULT_NB_EVENTS</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="DataFlowView" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>1001,210</value>
+								</regnode>
+							</regnode>
+						</regnode>
+						<attribute kind="IsConfigurable" status="meta">
+							<value>true</value>
+						</attribute>
+						<attribute kind="IsTestParameter" status="inherited">
+							<value>true</value>
+						</attribute>
+						<attribute kind="ParameterType" status="inherited">
+							<value>double</value>
+						</attribute>
+						<attribute kind="ParameterValue" status="inherited">
+							<value>64</value>
+						</attribute>
+						<attribute kind="isHidden" status="meta">
+							<value>false</value>
+						</attribute>
+					</atom>
+					<atom id="id-0066-00000145" kind="ThisInstance" role="ThisInstance" guid="{CAF84545-3833-44bf-AF36-A5D5F9EE7023}" derivedfrom="id-0066-0000001a" isinstance="no" isprimary="no">
+						<name>ThisInstance</name>
+					</atom>
+					<atom id="id-0066-00000146" kind="Parameter" role="Parameter" guid="{F070C20B-DC42-4d32-8D1C-C149E4ABE07D}" derivedfrom="id-0066-0000001c" isinstance="no" isprimary="no">
+						<name>RU_READOUT_PACKING</name>
+						<regnode name="PartRegs" isopaque="yes">
+							<value></value>
+							<regnode name="DataFlowView" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>791,210</value>
+								</regnode>
+							</regnode>
+							<regnode name="TestDefinitionView" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>714,238</value>
+								</regnode>
+							</regnode>
+						</regnode>
+						<attribute kind="IsConfigurable" status="meta">
+							<value>true</value>
+						</attribute>
+						<attribute kind="IsTestParameter" status="inherited">
+							<value>true</value>
+						</attribute>
+						<attribute kind="ParameterType" status="inherited">
+							<value>double</value>
+						</attribute>
+						<attribute kind="ParameterValue">
+							<value>8</value>
+						</attribute>
+						<attribute kind="isHidden" status="meta">
+							<value>false</value>
+						</attribute>
+					</atom>
+					<atom id="id-0066-00000147" kind="Parameter" role="Parameter" guid="{11B7CCF7-B189-42de-9149-0B424FB9D5BD}" derivedfrom="id-0066-00000021" isinstance="no" isprimary="no">
+						<name>maxEvtsUnderConstruction</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="DataFlowView" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>1001,308</value>
+								</regnode>
+							</regnode>
+						</regnode>
+						<attribute kind="IsConfigurable" status="meta">
+							<value>true</value>
+						</attribute>
+						<attribute kind="IsTestParameter" status="inherited">
+							<value>true</value>
+						</attribute>
+						<attribute kind="ParameterType" status="inherited">
+							<value>double</value>
+						</attribute>
+						<attribute kind="ParameterValue">
+							<value>32</value>
+						</attribute>
+						<attribute kind="isHidden" status="meta">
+							<value>false</value>
+						</attribute>
+					</atom>
+					<atom id="id-0066-00000148" kind="Parameter" role="Parameter" guid="{6D3D8732-DDEE-4d99-BAC9-AFC35D0A7084}" derivedfrom="id-0066-00000022" isinstance="no" isprimary="no">
+						<name>MAX_RUS</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="DataFlowView" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>791,420</value>
+								</regnode>
+							</regnode>
+						</regnode>
+						<attribute kind="IsConfigurable" status="meta">
+							<value>true</value>
+						</attribute>
+						<attribute kind="IsTestParameter" status="inherited">
+							<value>true</value>
+						</attribute>
+						<attribute kind="ParameterType" status="inherited">
+							<value>double</value>
+						</attribute>
+						<attribute kind="ParameterValue" status="inherited">
+							<value>8</value>
+						</attribute>
+						<attribute kind="isHidden" status="meta">
+							<value>false</value>
+						</attribute>
+					</atom>
+					<atom id="id-0066-00000149" kind="Parameter" role="Parameter" guid="{46AF6A22-8FAE-4014-9EAE-5C4BE1A079C6}" derivedfrom="id-0066-0000001d" isinstance="no" isprimary="no">
+						<name>nbEvtIdsInBuilder</name>
+						<regnode name="PartRegs" isopaque="yes">
+							<value></value>
+							<regnode name="DataFlowView" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>791,308</value>
+								</regnode>
+							</regnode>
+							<regnode name="TestDefinitionView" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>714,364</value>
+								</regnode>
+							</regnode>
+						</regnode>
+						<attribute kind="IsConfigurable" status="meta">
+							<value>true</value>
+						</attribute>
+						<attribute kind="IsTestParameter" status="inherited">
+							<value>true</value>
+						</attribute>
+						<attribute kind="ParameterType" status="inherited">
+							<value>double</value>
+						</attribute>
+						<attribute kind="ParameterValue">
+							<value>32</value>
+						</attribute>
+						<attribute kind="isHidden" status="meta">
+							<value>false</value>
+						</attribute>
+					</atom>
+					<atom id="id-0066-0000014a" kind="Parameter" role="Parameter" guid="{F6520B4F-FC9C-4828-9F2C-5F84318711FE}" derivedfrom="id-0066-00000020" isinstance="no" isprimary="no">
+						<name>MAX_BUS</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="DataFlowView" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>1001,420</value>
+								</regnode>
+							</regnode>
+						</regnode>
+						<attribute kind="IsConfigurable" status="meta">
+							<value>true</value>
+						</attribute>
+						<attribute kind="IsTestParameter" status="inherited">
+							<value>true</value>
+						</attribute>
+						<attribute kind="ParameterType" status="inherited">
+							<value>double</value>
+						</attribute>
+						<attribute kind="ParameterValue" status="inherited">
+							<value>8</value>
+						</attribute>
+						<attribute kind="isHidden" status="meta">
+							<value>false</value>
+						</attribute>
+					</atom>
+					<atom id="id-0066-0000014b" kind="AppBiDataPort" role="AppBiDataPort" guid="{CF530E35-2D20-4ec9-AB24-DD8BA5C84457}" derivedfrom="id-0066-0000001e" isinstance="no" isprimary="no">
+						<name>RU</name>
+					</atom>
+					<atom id="id-0066-0000014c" kind="AppBiDataPort" role="AppBiDataPort" guid="{24A2C8E4-24BD-4977-82AF-A8E823C02D06}" derivedfrom="id-0066-0000001f" isinstance="no" isprimary="no">
+						<name>PT</name>
+					</atom>
+					<atom id="id-0066-0000014d" kind="ProbePositive" role="ProbePositive" guid="{27DCEB3C-65AE-44bc-AFF3-884895601946}" derivedfrom="id-0066-0000006b" isinstance="no" isprimary="no">
+						<name>ProbePositive</name>
+					</atom>
+					<atom id="id-0066-0000014e" kind="AppBiDataPort" role="AppBiDataPort" guid="{DB52AD86-6C84-4e61-BF7A-9CE6EDEC51CF}" derivedfrom="id-0066-0000001b" isinstance="no" isprimary="no">
+						<name>BU</name>
+					</atom>
+					<atom id="id-0066-0000014f" kind="ProbeNegative" role="ProbeNegative" guid="{07595CB2-E559-4742-B884-E1C380A55259}" derivedfrom="id-0066-00000069" isinstance="no" isprimary="no">
+						<name>ProbeNegative</name>
+					</atom>
+				</model>
+				<atom id="id-0066-00000118" kind="Iterator" role="Iterator" guid="{B4CE2C7B-3D30-4a35-91B5-307B50422970}" relid="0x51">
+					<name>TestIterator</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="TestSeriesDefinitionView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>160,20</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<regnode name="guid" isopaque="yes">
+						<value>{4556D184-344D-4ce5-B17D-CE4C12FBBD39}</value>
+					</regnode>
+					<regnode name="namePosition" isopaque="yes">
+						<value>6</value>
+					</regnode>
+					<attribute kind="End">
+						<value>25</value>
+					</attribute>
+					<attribute kind="Start">
+						<value>1</value>
+					</attribute>
+					<attribute kind="Step">
+						<value>1</value>
+					</attribute>
+				</atom>
+				<atom id="id-0066-00000119" kind="Test" role="Test" guid="{007EF83E-FA72-433b-9370-D02F18F2DD66}" relid="0x52">
+					<name>Test</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="TestSeriesDefinitionView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>48,267</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<regnode name="guid" isopaque="yes">
+						<value>{C1E43520-34B3-443b-9EE1-F974E17126F8}</value>
+					</regnode>
+					<attribute kind="Comment">
+						<value>Size Sweep 1x1</value>
+					</attribute>
+					<attribute kind="Database">
+						<value>XDAQSim.sqlite</value>
+					</attribute>
+					<attribute kind="ID" status="meta">
+						<value></value>
+					</attribute>
+				</atom>
+				<atom id="id-0066-0000011a" kind="Port" role="Port" guid="{B5F61FA3-D9C2-440f-A442-9AF85CF0A6FE}" relid="0x9f">
+					<name>Port</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="DeploymentView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>509,467</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<attribute kind="PortType" status="meta">
+						<value>TCP/IP</value>
+					</attribute>
+					<attribute kind="PortValue">
+						<value>4000</value>
+					</attribute>
+				</atom>
+				<atom id="id-0066-0000011b" kind="PerformanceProbe" role="PerformanceProbe" guid="{64CC7EA0-2C6E-4160-9485-49A1E8C562C0}" relid="0xa4">
+					<name>RU_Throughput</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="PerformanceView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>44,187</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<attribute kind="Metric" status="meta">
+						<value>Throughput</value>
+					</attribute>
+				</atom>
+				<atom id="id-0066-0000011c" kind="Connector" role="Connector" guid="{53EC06B2-19DB-4d8d-9E42-5ABA1BBFEE78}" relid="0x4c">
+					<name>RU-EVM</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="PerformanceView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>290,384</value>
+							</regnode>
+						</regnode>
+						<regnode name="TestSeriesDefinitionView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>388,482</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<regnode name="guid" isopaque="yes">
+						<value>{23599139-4013-4918-BB3A-91F6A0985F26}</value>
+					</regnode>
+					<attribute kind="ConnectionRule">
+						<value>1</value>
+					</attribute>
+				</atom>
+				<atom id="id-0066-0000011d" kind="PerformanceProbe" role="PerformanceProbe" guid="{5F742A7F-0A1A-471c-8B0E-18B82FC15273}" relid="0xb6">
+					<name>AverageEventSize</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="PerformanceView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>905,541</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<attribute kind="Metric">
+						<value>Average Event Size</value>
+					</attribute>
+				</atom>
+				<atom id="id-0066-0000011e" kind="PerformanceProbe" role="PerformanceProbe" guid="{21E41214-8C53-4c44-95BB-43D4419CA141}" relid="0xa8">
+					<name>System_Throughput</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="PerformanceView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>905,299</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<attribute kind="Metric" status="meta">
+						<value>Throughput</value>
+					</attribute>
+				</atom>
+				<atom id="id-0066-0000011f" kind="PerformanceProbe" role="PerformanceProbe" guid="{97F39266-E3E8-47c9-94DE-6381AAA453CD}" relid="0xb0">
+					<name>BU_Throughput</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="PerformanceView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>527,103</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<attribute kind="Metric" status="meta">
+						<value>Throughput</value>
+					</attribute>
+				</atom>
+				<atom id="id-0066-00000120" kind="PerformanceProbe" role="PerformanceProbe" guid="{604A3E39-C0F3-419f-B65F-BD1054E4704F}" relid="0xb9">
+					<name>System Latency</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="PerformanceView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>639,618</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<attribute kind="Metric">
+						<value>Latency</value>
+					</attribute>
+				</atom>
+				<atom id="id-0066-00000121" kind="AbstractContext" role="AbstractContext" guid="{A14906B8-E394-4230-B31F-0718A65E8F54}" relid="0x8c">
+					<name>Executive</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="DeploymentView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>492,324</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-00000122" kind="Connector" role="Connector" guid="{B06E79A3-218D-4bc6-8B28-5496B7E07A22}" relid="0x4b">
+					<name>RU-BU</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="PerformanceView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>423,216</value>
+							</regnode>
+						</regnode>
+						<regnode name="TestSeriesDefinitionView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>507,258</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<regnode name="guid" isopaque="yes">
+						<value>{7457BBE8-54D0-40f1-86EA-B94D59855B08}</value>
+					</regnode>
+					<attribute kind="ConnectionRule">
+						<value>1</value>
+					</attribute>
+				</atom>
+				<atom id="id-0066-0000012a" kind="Connector" role="Connector" guid="{0F7568F0-30D1-4841-81AD-42E409C8AEE4}" relid="0x4f">
+					<name>RU-PT</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="PerformanceView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>556,34</value>
+							</regnode>
+						</regnode>
+						<regnode name="TestSeriesDefinitionView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>507,146</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<regnode name="guid" isopaque="yes">
+						<value>{64FE0B9E-D044-4dcf-A8DC-129B5FF792FA}</value>
+					</regnode>
+					<attribute kind="ConnectionRule">
+						<value>1</value>
+					</attribute>
+				</atom>
+				<atom id="id-0066-0000013a" kind="Connector" role="Connector" guid="{A1E16E2B-6404-4435-89C1-8C789DB05335}" relid="0x4d">
+					<name>BU-EVM</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="PerformanceView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>745,356</value>
+							</regnode>
+						</regnode>
+						<regnode name="TestSeriesDefinitionView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>794,447</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<regnode name="guid" isopaque="yes">
+						<value>{C7A49DB8-2890-4698-967A-09C81CFEBA10}</value>
+					</regnode>
+					<attribute kind="ConnectionRule">
+						<value>1</value>
+					</attribute>
+				</atom>
+				<atom id="id-0066-0000013b" kind="Connector" role="Connector" guid="{905E23A2-A1B1-4187-AB5A-28BC93E3DBD5}" relid="0x4e">
+					<name>BU-PT</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="PerformanceView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>899,181</value>
+							</regnode>
+						</regnode>
+						<regnode name="TestSeriesDefinitionView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>906,244</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<regnode name="guid" isopaque="yes">
+						<value>{4B95DDDF-3608-4592-9EB7-89BE97E8FBD6}</value>
+					</regnode>
+					<attribute kind="ConnectionRule">
+						<value>1</value>
+					</attribute>
+				</atom>
+				<atom id="id-0066-0000013c" kind="Connector" role="Connector" guid="{B35596B4-6971-435f-A71B-11F089AFA1E7}" relid="0x50">
+					<name>EVM-PT</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="PerformanceView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>724,538</value>
+							</regnode>
+						</regnode>
+						<regnode name="TestSeriesDefinitionView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>801,545</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<regnode name="guid" isopaque="yes">
+						<value>{7EB50639-3981-4549-9433-FAEC0D384E94}</value>
+					</regnode>
+					<attribute kind="ConnectionRule">
+						<value>1</value>
+					</attribute>
+				</atom>
+				<reference id="id-0067-00000010" kind="ResourceReference" role="ResourceReference" guid="{E0602E78-1B2D-4d86-97E4-2085D2F1DAD4}" relid="0x6b" referred="id-0065-00000008">
+					<name>Node1</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="ContainmentAspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>495,495</value>
+							</regnode>
+						</regnode>
+						<regnode name="DeploymentView" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>306,446</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</reference>
+				<connection id="id-0068-000000a6" kind="ContextToPortConnection" role="ContextToPortConnection" guid="{8C42ABAE-B320-4bee-BDCF-B7D957ED9579}" relid="0xa1">
+					<name>ContextToPortConnection</name>
+					<regnode name="autorouterPref" isopaque="yes">
+						<value>n</value>
+					</regnode>
+					<connpoint role="dst" target="id-0066-0000011a"/>
+					<connpoint role="src" target="id-0066-00000121"/>
+				</connection>
+				<connection id="id-0068-000000a7" kind="ContainmentAssociationConn" role="ContainmentAssociationConn" guid="{CA1F69FA-1A75-4bf7-9858-630069F06FA0}" relid="0x9d">
+					<name>ContainmentAssociationConn</name>
+					<attribute kind="Cardinality" status="meta">
+						<value></value>
+					</attribute>
+					<connpoint role="src" target="id-0065-00000026"/>
+					<connpoint role="dst" target="id-0066-00000121"/>
+				</connection>
+				<connection id="id-0068-000000a8" kind="ContainmentAssociationConn" role="ContainmentAssociationConn" guid="{3F7B56C6-040E-4938-B92F-533B11619D27}" relid="0x91">
+					<name>ContainmentAssociationConn</name>
+					<regnode name="autorouterPref" isopaque="yes">
+						<value>n</value>
+					</regnode>
+					<attribute kind="Cardinality" status="meta">
+						<value></value>
+					</attribute>
+					<connpoint role="src" target="id-0065-00000025"/>
+					<connpoint role="dst" target="id-0066-00000121"/>
+				</connection>
+				<connection id="id-0068-000000a9" kind="BiPortToConnectorConn" role="BiPortToConnectorConn" guid="{469E42B1-B178-4864-BB11-6C3902B05277}" relid="0x5c">
+					<name>BiPortToConnectorConn</name>
+					<regnode name="autorouterPref" isopaque="yes">
+						<value>n</value>
+					</regnode>
+					<connpoint role="dst" target="id-0066-0000011c"/>
+					<connpoint role="src" target="id-0066-00000136"/>
+				</connection>
+				<connection id="id-0068-000000aa" kind="IteratorToApplicationConn" role="IteratorToApplicationConn" guid="{D60552D0-E71F-45ac-877D-27558DA1BD79}" relid="0x67">
+					<name>IteratorToApplicationConn</name>
+					<regnode name="autorouterPref" isopaque="yes">
+						<value>n</value>
+					</regnode>
+					<connpoint role="dst" target="id-0065-00000028"/>
+					<connpoint role="src" target="id-0066-00000118"/>
+				</connection>
+				<connection id="id-0068-000000ab" kind="NegativeProbeConnection" role="NegativeProbeConnection" guid="{E8A7BA4D-05A4-4016-8C17-DD2471F005DF}" relid="0xb1">
+					<name>NegativeProbeConnection</name>
+					<regnode name="autorouterPref" isopaque="yes">
+						<value>W</value>
+					</regnode>
+					<connpoint role="src" target="id-0066-0000011f"/>
+					<connpoint role="dst" target="id-0066-0000012e"/>
+				</connection>
+				<connection id="id-0068-000000ac" kind="NegativeProbeConnection" role="NegativeProbeConnection" guid="{82632E9C-58C9-4902-9A81-4365D8329D4E}" relid="0xba">
+					<name>NegativeProbeConnection</name>
+					<regnode name="autorouterPref" isopaque="yes">
+						<value>W</value>
+					</regnode>
+					<connpoint role="src" target="id-0066-00000120"/>
+					<connpoint role="dst" target="id-0066-0000014f"/>
+				</connection>
+				<connection id="id-0068-000000ad" kind="PositiveProbeConnection" role="PositiveProbeConnection" guid="{20B3558C-4014-483a-ACE8-9A735EE6F7BA}" relid="0xaf">
+					<name>PositiveProbeConnection</name>
+					<regnode name="autorouterPref" isopaque="yes">
+						<value>S</value>
+					</regnode>
+					<connpoint role="src" target="id-0066-0000011e"/>
+					<connpoint role="dst" target="id-0066-0000014d"/>
+				</connection>
+				<connection id="id-0068-000000ae" kind="PositiveProbeConnection" role="PositiveProbeConnection" guid="{0345569F-B522-4648-86CE-B48FE8421DF8}" relid="0xb2">
+					<name>PositiveProbeConnection</name>
+					<regnode name="autorouterPref" isopaque="yes">
+						<value>W</value>
+					</regnode>
+					<connpoint role="src" target="id-0066-0000011f"/>
+					<connpoint role="dst" target="id-0066-0000012f"/>
+				</connection>
+				<connection id="id-0068-000000af" kind="PositiveProbeConnection" role="PositiveProbeConnection" guid="{30538841-522C-4459-974A-3E4CF37A9B12}" relid="0xb3">
+					<name>PositiveProbeConnection</name>
+					<connpoint role="src" target="id-0066-0000011b"/>
+					<connpoint role="dst" target="id-0066-00000138"/>
+				</connection>
+				<connection id="id-0068-000000b0" kind="NegativeProbeConnection" role="NegativeProbeConnection" guid="{68A6351C-5B86-4761-93BC-AB527A56E8B7}" relid="0xb4">
+					<name>NegativeProbeConnection</name>
+					<regnode name="autorouterPref" isopaque="yes">
+						<value>N</value>
+					</regnode>
+					<connpoint role="src" target="id-0066-0000011e"/>
+					<connpoint role="dst" target="id-0066-00000135"/>
+				</connection>
+				<connection id="id-0068-000000b1" kind="ContainmentAssociationConn" role="ContainmentAssociationConn" guid="{4FB45C86-7C6B-4bd0-8D73-80910C89FAD7}" relid="0xab">
+					<name>ContainmentAssociationConn</name>
+					<regnode name="autorouterPref" isopaque="yes">
+						<value>w</value>
+					</regnode>
+					<attribute kind="Cardinality" status="meta">
+						<value></value>
+					</attribute>
+					<connpoint role="src" target="id-0065-00000028"/>
+					<connpoint role="dst" target="id-0066-00000121"/>
+				</connection>
+				<connection id="id-0068-000000b2" kind="InputGeneratorApplicationConnection" role="InputGeneratorApplicationConnection" guid="{B5C6DC2E-E24A-45eb-AD97-3E75EEF49D0A}" relid="0xa2">
+					<name>InputGeneratorApplicationConnection</name>
+					<connpoint role="src" target="id-0065-00000024"/>
+					<connpoint role="dst" target="id-0065-00000026"/>
+				</connection>
+				<connection id="id-0068-000000b3" kind="ContainmentAssociationConn" role="ContainmentAssociationConn" guid="{140B6159-CA69-4392-BB74-DB38E9125447}" relid="0xac">
+					<name>ContainmentAssociationConn</name>
+					<regnode name="autorouterPref" isopaque="yes">
+						<value>e</value>
+					</regnode>
+					<attribute kind="Cardinality" status="meta">
+						<value></value>
+					</attribute>
+					<connpoint role="src" target="id-0065-00000027"/>
+					<connpoint role="dst" target="id-0066-00000121"/>
+				</connection>
+				<connection id="id-0068-000000b7" kind="IteratorToInputGeneratorConnection" role="IteratorToInputGeneratorConnection" guid="{6C8F0D2B-299E-46bf-AAC1-23EEE973E79C}" relid="0x8a">
+					<name>IteratorToInputGeneratorConnection</name>
+					<connpoint role="dst" target="id-0065-00000024"/>
+					<connpoint role="src" target="id-0066-00000118"/>
+				</connection>
+				<connection id="id-0068-000000b8" kind="InputGeneratorApplicationConnection" role="InputGeneratorApplicationConnection" guid="{A6FC5A0F-0F14-4499-B1EE-C37B4D19DF42}" relid="0xa3">
+					<name>InputGeneratorApplicationConnection</name>
+					<connpoint role="src" target="id-0065-00000024"/>
+					<connpoint role="dst" target="id-0065-00000028"/>
+				</connection>
+				<connection id="id-0068-000000b9" kind="ConnectorToBiPortConn" role="ConnectorToBiPortConn" guid="{897E6DBC-CA6F-4ef1-85B6-B23D775E1C83}" relid="0x63">
+					<name>ConnectorToBiPortConn</name>
+					<regnode name="autorouterPref" isopaque="yes">
+						<value>W</value>
+					</regnode>
+					<connpoint role="src" target="id-0066-0000013a"/>
+					<connpoint role="dst" target="id-0066-0000014e"/>
+				</connection>
+				<connection id="id-0068-000000ba" kind="IteratorToApplicationConn" role="IteratorToApplicationConn" guid="{0038D0DB-3DEC-4c79-A8D8-1EA2CDEE2C59}" relid="0x65">
+					<name>IteratorToApplicationConn</name>
+					<regnode name="autorouterPref" isopaque="yes">
+						<value>En</value>
+					</regnode>
+					<connpoint role="dst" target="id-0065-00000026"/>
+					<connpoint role="src" target="id-0066-00000118"/>
+				</connection>
+				<connection id="id-0068-000000bb" kind="IteratorToApplicationConn" role="IteratorToApplicationConn" guid="{97B795E0-6C69-4337-8119-2CEA229A6A6E}" relid="0x66">
+					<name>IteratorToApplicationConn</name>
+					<regnode name="autorouterPref" isopaque="yes">
+						<value>n</value>
+					</regnode>
+					<connpoint role="dst" target="id-0065-00000027"/>
+					<connpoint role="src" target="id-0066-00000118"/>
+				</connection>
+				<connection id="id-0068-000000bc" kind="IteratorToApplicationConn" role="IteratorToApplicationConn" guid="{FDE5E4B6-2F64-4bc9-98CD-C1AB75DAF80C}" relid="0x68">
+					<name>IteratorToApplicationConn</name>
+					<regnode name="autorouterPref" isopaque="yes">
+						<value>n</value>
+					</regnode>
+					<connpoint role="dst" target="id-0065-00000025"/>
+					<connpoint role="src" target="id-0066-00000118"/>
+				</connection>
+				<connection id="id-0068-000000bd" kind="IteratorToTestConnection" role="IteratorToTestConnection" guid="{9FD6B600-E09F-4297-871C-27E81EBE2A25}" relid="0x69">
+					<name>IteratorToTestConnection</name>
+					<regnode name="autorouterPref" isopaque="yes">
+						<value>n</value>
+					</regnode>
+					<connpoint role="src" target="id-0066-00000118"/>
+					<connpoint role="dst" target="id-0066-00000119"/>
+				</connection>
+				<connection id="id-0068-000000be" kind="BiPortToConnectorConn" role="BiPortToConnectorConn" guid="{9CBB6407-CC47-4aec-A204-40D78E1BE73E}" relid="0x7a">
+					<name>BiPortToConnectorConn</name>
+					<regnode name="autorouterPref" isopaque="yes">
+						<value>w</value>
+					</regnode>
+					<connpoint role="dst" target="id-0066-0000012a"/>
+					<connpoint role="src" target="id-0066-00000137"/>
+				</connection>
+				<connection id="id-0068-000000bf" kind="BiPortToConnectorConn" role="BiPortToConnectorConn" guid="{DD66E6EE-98E4-4f59-91BE-917769F61610}" relid="0x7e">
+					<name>BiPortToConnectorConn</name>
+					<connpoint role="src" target="id-0066-00000131"/>
+					<connpoint role="dst" target="id-0066-0000013a"/>
+				</connection>
+				<connection id="id-0068-000000c0" kind="ConnectorToBiPortConn" role="ConnectorToBiPortConn" guid="{95A6A69A-C924-42d5-91B4-3C013251D205}" relid="0x80">
+					<name>ConnectorToBiPortConn</name>
+					<connpoint role="src" target="id-0066-0000011c"/>
+					<connpoint role="dst" target="id-0066-0000014b"/>
+				</connection>
+				<connection id="id-0068-000000c1" kind="ConnectorToBiPortConn" role="ConnectorToBiPortConn" guid="{63ED77CF-9029-4acc-937D-D1E7FF1EE5CC}" relid="0x81">
+					<name>ConnectorToBiPortConn</name>
+					<regnode name="autorouterPref" isopaque="yes">
+						<value>E</value>
+					</regnode>
+					<connpoint role="src" target="id-0066-0000012a"/>
+					<connpoint role="dst" target="id-0066-0000013f"/>
+				</connection>
+				<connection id="id-0068-000000c2" kind="ConnectorToBiPortConn" role="ConnectorToBiPortConn" guid="{598E7890-3106-4f7a-AD69-A86DDAEBBCCB}" relid="0x82">
+					<name>ConnectorToBiPortConn</name>
+					<regnode name="autorouterPref" isopaque="yes">
+						<value>N</value>
+					</regnode>
+					<connpoint role="src" target="id-0066-0000013b"/>
+					<connpoint role="dst" target="id-0066-0000013e"/>
+				</connection>
+				<connection id="id-0068-000000c3" kind="ConnectorToBiPortConn" role="ConnectorToBiPortConn" guid="{902DA399-8438-4b5c-89C5-3980E35239CE}" relid="0x83">
+					<name>ConnectorToBiPortConn</name>
+					<connpoint role="src" target="id-0066-0000013c"/>
+					<connpoint role="dst" target="id-0066-00000142"/>
+				</connection>
+				<connection id="id-0068-000000c4" kind="ConnectorToBiPortConn" role="ConnectorToBiPortConn" guid="{90AABEB9-4B27-45b6-A823-CFAC9F1A147C}" relid="0x84">
+					<name>ConnectorToBiPortConn</name>
+					<regnode name="autorouterPref" isopaque="yes">
+						<value>E</value>
+					</regnode>
+					<connpoint role="src" target="id-0066-00000122"/>
+					<connpoint role="dst" target="id-0066-00000130"/>
+				</connection>
+				<connection id="id-0068-000000c5" kind="BiPortToConnectorConn" role="BiPortToConnectorConn" guid="{97291F63-15C9-4cbc-99EE-22410348182F}" relid="0x85">
+					<name>BiPortToConnectorConn</name>
+					<regnode name="autorouterPref" isopaque="yes">
+						<value>w</value>
+					</regnode>
+					<connpoint role="dst" target="id-0066-00000122"/>
+					<connpoint role="src" target="id-0066-00000139"/>
+				</connection>
+				<connection id="id-0068-000000c6" kind="BiPortToConnectorConn" role="BiPortToConnectorConn" guid="{98B9D314-1F53-41b6-98CB-6586DA8FBCD8}" relid="0x86">
+					<name>BiPortToConnectorConn</name>
+					<regnode name="autorouterPref" isopaque="yes">
+						<value>w</value>
+					</regnode>
+					<connpoint role="dst" target="id-0066-0000013c"/>
+					<connpoint role="src" target="id-0066-0000014c"/>
+				</connection>
+				<connection id="id-0068-000000c7" kind="BiPortToConnectorConn" role="BiPortToConnectorConn" guid="{62C372BF-379B-4a00-8507-CC7F7AF2A22A}" relid="0x87">
+					<name>BiPortToConnectorConn</name>
+					<regnode name="autorouterPref" isopaque="yes">
+						<value>w</value>
+					</regnode>
+					<connpoint role="src" target="id-0066-00000132"/>
+					<connpoint role="dst" target="id-0066-0000013b"/>
+				</connection>
+				<connection id="id-0068-000000c8" kind="PositiveProbeConnection" role="PositiveProbeConnection" guid="{153551FF-53CF-4981-993C-E2ACF70BB012}" relid="0xb7">
+					<name>PositiveProbeConnection</name>
+					<regnode name="autorouterPref" isopaque="yes">
+						<value>N</value>
+					</regnode>
+					<connpoint role="src" target="id-0066-0000011d"/>
+					<connpoint role="dst" target="id-0066-0000012f"/>
+				</connection>
+				<connection id="id-0068-000000c9" kind="PositiveProbeConnection" role="PositiveProbeConnection" guid="{56935F00-B8FC-4d30-9230-8957203C6CEF}" relid="0xbb">
+					<name>PositiveProbeConnection</name>
+					<regnode name="autorouterPref" isopaque="yes">
+						<value>E</value>
+					</regnode>
+					<connpoint role="src" target="id-0066-00000120"/>
+					<connpoint role="dst" target="id-0066-0000012f"/>
+				</connection>
+				<connection id="id-0068-000000ca" kind="NegativeProbeConnection" role="NegativeProbeConnection" guid="{7BE6E06B-8F50-4931-84E7-87F78754AFD4}" relid="0xb5">
+					<name>NegativeProbeConnection</name>
+					<regnode name="autorouterPref" isopaque="yes">
+						<value>E</value>
+					</regnode>
+					<connpoint role="src" target="id-0066-0000011b"/>
+					<connpoint role="dst" target="id-0066-00000135"/>
+				</connection>
+				<connection id="id-0068-000000cb" kind="NegativeProbeConnection" role="NegativeProbeConnection" guid="{93C4B9B2-FF79-4ef9-AFC6-A36D4C0E2331}" relid="0xb8">
+					<name>NegativeProbeConnection</name>
+					<regnode name="autorouterPref" isopaque="yes">
+						<value>S</value>
+					</regnode>
+					<connpoint role="src" target="id-0066-0000011d"/>
+					<connpoint role="dst" target="id-0066-0000014f"/>
+				</connection>
+				<connection id="id-0068-000000cc" kind="PortToNICConn" role="PortToNICConn" guid="{8116618A-EE49-4cb2-BD55-A71DEAFF49B4}" relid="0xaa">
+					<name>PortToNICConn</name>
+					<regnode name="autorouterPref" isopaque="yes">
+						<value>W</value>
+					</regnode>
+					<connpoint role="dst" target="id-0066-0000002f" refs="id-0067-00000010"/>
+					<connpoint role="src" target="id-0066-0000011a"/>
+				</connection>
+			</model>
+		</folder>
+	</folder>
+</project>

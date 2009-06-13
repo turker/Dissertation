@@ -1,0 +1,5 @@
+DEVS++: C++ Open Source of DEVS Implementation, (C) 2005~2007, http://odevspp.sourceforge.net
+The current date is 06/13/09 
+The current time is 01:55:34 
+Simulation Ending Time: 13000.000 
+No. of Repetition: 1 

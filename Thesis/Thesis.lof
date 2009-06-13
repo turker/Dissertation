@@ -1,0 +1,61 @@
+Figure \hfill Page
+
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1}{\ignorespaces Application metamodel in GME}}{10}
+\contentsline {figure}{\numberline {2}{\ignorespaces Data Flow Aspect of a Sample Application Model}}{12}
+\contentsline {figure}{\numberline {3}{\ignorespaces Test Series Definition Aspect of a Sample Application Model}}{12}
+\contentsline {figure}{\numberline {4}{\ignorespaces Resource Library Metamodel}}{14}
+\contentsline {figure}{\numberline {5}{\ignorespaces Resource Configuration Metamodel}}{15}
+\contentsline {figure}{\numberline {6}{\ignorespaces Use of iterators and replicators in the model}}{16}
+\contentsline {figure}{\numberline {7}{\ignorespaces Use of iterators and replicators with connectors}}{17}
+\contentsline {figure}{\numberline {8}{\ignorespaces Resulting Configuration for Example 2}}{17}
+\contentsline {figure}{\numberline {9}{\ignorespaces Input Generator Meta Model}}{20}
+\contentsline {figure}{\numberline {10}{\ignorespaces Test Series Definition Meta Model}}{21}
+\contentsline {figure}{\numberline {11}{\ignorespaces Test Cases Run on System Implementation}}{30}
+\contentsline {figure}{\numberline {12}{\ignorespaces Test Cases Run on Simulation Engine}}{31}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1}{\ignorespaces Symmetric Structure of Atomic DEVS}}{36}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1}{\ignorespaces Data Flow in the Trigger/DAQ System}}{42}
+\contentsline {figure}{\numberline {2}{\ignorespaces CMS DAQ System Architecture}}{44}
+\contentsline {figure}{\numberline {3}{\ignorespaces Front and Side Views of the DAQ}}{45}
+\contentsline {figure}{\numberline {4}{\ignorespaces Three-Dimensional View of the System}}{46}
+\contentsline {figure}{\numberline {5}{\ignorespaces Dynamic Behavior of EVM}}{48}
+\contentsline {figure}{\numberline {6}{\ignorespaces Dynamic Behavior of RU}}{49}
+\contentsline {figure}{\numberline {7}{\ignorespaces Dynamic Behavior of BU}}{50}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1}{\ignorespaces System Architecture}}{53}
+\contentsline {figure}{\numberline {2}{\ignorespaces Implementation of System Under Test}}{54}
+\contentsline {figure}{\numberline {3}{\ignorespaces RU Builder Connected to Event Builder}}{55}
+\contentsline {figure}{\numberline {4}{\ignorespaces Dynamic Behavior and Internal FIFOs of EVM}}{58}
+\contentsline {figure}{\numberline {5}{\ignorespaces EVM Model}}{60}
+\contentsline {figure}{\numberline {6}{\ignorespaces Dynamic Behavior and Internal FIFOs of RU}}{61}
+\contentsline {figure}{\numberline {7}{\ignorespaces RU Model}}{63}
+\contentsline {figure}{\numberline {8}{\ignorespaces Dynamic Behavior and Internal FIFOs of BU}}{64}
+\contentsline {figure}{\numberline {9}{\ignorespaces BU Model}}{66}
+\contentsline {figure}{\numberline {10}{\ignorespaces Dynamic Behavior and Internal FIFOs of PT}}{67}
+\contentsline {figure}{\numberline {11}{\ignorespaces PeerTransport Model}}{68}
+\contentsline {figure}{\numberline {12}{\ignorespaces Dynamic Behavior and Internal FIFOs of Executive}}{69}
+\contentsline {figure}{\numberline {13}{\ignorespaces Executive Model}}{70}
+\contentsline {figure}{\numberline {14}{\ignorespaces Processor DEVS Model}}{70}
+\contentsline {figure}{\numberline {15}{\ignorespaces Sweeping EventSizeMean and EventSizeSigma}}{74}
+\contentsline {figure}{\numberline {16}{\ignorespaces Input Data Generator Component View}}{75}
+\contentsline {figure}{\numberline {17}{\ignorespaces EVM-BU Interface Diagram}}{77}
+\contentsline {figure}{\numberline {18}{\ignorespaces EVM-RU Interface Diagram}}{80}
+\contentsline {figure}{\numberline {19}{\ignorespaces BU-RU Interface Diagram}}{81}
+\contentsline {figure}{\numberline {20}{\ignorespaces Executive-Peer Transport Interface Diagram}}{82}
+\contentsline {figure}{\numberline {21}{\ignorespaces Processor-Application Interface}}{83}
+\contentsline {figure}{\numberline {22}{\ignorespaces Application Type Model for EVM}}{85}
+\contentsline {figure}{\numberline {23}{\ignorespaces Test Series Definition View of a Test Series Definition with Replicators}}{87}
+\contentsline {figure}{\numberline {24}{\ignorespaces Iterator and Replicator Values}}{88}
+\contentsline {figure}{\numberline {25}{\ignorespaces Connection Rule is 1: All instances are connected}}{89}
+\contentsline {figure}{\numberline {26}{\ignorespaces Sweeping Application Parameter Value}}{90}
+\contentsline {figure}{\numberline {27}{\ignorespaces Sweeping Event Size in Input Generator}}{92}
+\contentsline {figure}{\numberline {28}{\ignorespaces Model of a Node in Resource Library}}{93}
+\contentsline {figure}{\numberline {29}{\ignorespaces Deployment View of Test Series Definition}}{95}
+\contentsline {figure}{\numberline {30}{\ignorespaces Performance View of Test Series Definition}}{96}
+\contentsline {figure}{\numberline {31}{\ignorespaces Metric Choices for Performance Probe}}{97}
+\contentsline {figure}{\numberline {32}{\ignorespaces Test Generation Process}}{98}
+\contentsline {figure}{\numberline {33}{\ignorespaces Test Case Schema}}{100}
+\contentsline {figure}{\numberline {34}{\ignorespaces Test Case Execution}}{102}
