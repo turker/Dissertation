@@ -1,0 +1,222 @@
+{% if json %}
+<html>
+    <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script src="/tests/js/jquery.js" type="text/javascript"></script>
+ <!--   <script src="/tests/js/jqueryMultiSelect.js" type="text/javascript"></script>
+ <link rel="stylesheet" type="text/css" href="/tests/css/jqueryMultiSelect.css" />-->
+
+    <script>
+        google.load('visualization', '1', {packages:['table']});
+        google.load("visualization", "1", {packages:["linechart"]});
+
+        range = [];
+        google.setOnLoadCallback(drawTable);
+        function drawTable() {
+          var json_table = new google.visualization.Table(document.getElementById('table_div_json'));
+          var json_data = new google.visualization.DataTable({{json|safe}}, 0.5);
+	  json_table.draw(json_data, {
+		  showRowNumber: false,
+	  	  page: 'enable',
+		  pageSize: 10
+	  });
+          google.visualization.events.addListener(json_table, 'select', selectHandler);
+        
+          function selectHandler() {
+              var selection = json_table.getSelection();
+              var rows = new Array();
+              var msg = '';
+              var data = {};
+              for (var i = 0; i < selection.length; i++) {
+                  rows.push(selection[i].row);
+                  data.post_data = rows;
+              }
+              $.post("/tests/select/",data, function(responseData) {
+                  var data = eval('(' + responseData.response_text + ')');
+                  var metric_table_data = new google.visualization.DataTable();
+                  metric_table_data.addRows(data.rows.length);
+                  range.push(responseData.range);
+                  //$("div#selected").append(range.length);
+                  for (var i = 0; i < data.cols.length; i++) {
+                      metric_table_data.addColumn(data.cols[i].type, data.cols[i].label);
+                      for (var j = 0; j < data.rows.length; j++) {
+                          metric_table_data.setCell(j,i,data.rows[j].c[i].v);
+                      }
+                  }
+
+                  var metric_table = new google.visualization.Table(document.getElementById('metric_table'));
+		  metric_table.draw(metric_table_data, {
+			  showRowNumber: false,
+			  page: 'enable',
+			  pageSize: 10,
+		  });
+
+                  var options_x = '<option value="">Choose metric</option>';
+                  var options_nx = '<option value="">Choose (-) endpoint</option>';
+                  var options_px = '<option value="">Choose (+) endpoint</option>';
+
+                  var options_y = '<option value="">Choose metric</option>';
+                  var options_ny = '<option value="">Choose (-) endpoint</option>';
+                  var options_py = '<option value="">Choose (+) endpoint</option>';
+                  $("select#metX option").remove();
+                  $("select#negX option").remove();
+                  $("select#posX option").remove();
+
+                  $("select#metY option").remove();
+                  $("select#negY option").remove();
+                  $("select#posY option").remove();
+                  var i;
+                  var used = new Array()
+                  for (i = 0; i < data.rows.length; i++) {                
+                      //if (used.
+                      options_x += '<option value="' + i + '">' + data.rows[i].c[0].v + '</option>';
+                      options_nx += '<option value="' + i + '">' + data.rows[i].c[1].v + '</option>';
+                      options_px += '<option value="' + i + '">' + data.rows[i].c[2].v + '</option>';
+
+                      options_y += '<option value="' + i + '">' + data.rows[i].c[0].v + '</option>';
+                      options_ny += '<option value="' + i + '">' + data.rows[i].c[1].v + '</option>';
+                      options_py += '<option value="' + i + '">' + data.rows[i].c[2].v + '</option>';
+                      used.push(data.rows[i].c[0]);
+                      used.push(data.rows[i].c[1]);
+                      used.push(data.rows[i].c[2]);
+                  }
+
+                  var j = i + 1;
+                  options_x += '<option value="' + j +'">Tests</option>';
+                  options_y += '<option value="' + j +'">Tests</option>';
+
+                  $("select#metX").html(options_x);
+                  $("select#negX").html(options_nx);
+                  $("select#posX").html(options_px);
+
+                  $("select#metY").html(options_y);
+                  $("select#negY").html(options_ny);
+                  $("select#posY").html(options_py);
+
+                  //Populate the hidden fields with range info
+                  var s = range[0];
+                  var e = range[range.length - 1];
+                  s++;
+                  e++;
+                  $("#rangeStart").val(s);
+                  $("#rangeEnd").val(e);
+              }, "json");
+
+          }
+        }     
+    </script>
+
+    <script>
+        $(document).ready(function() {
+
+            $("#plot_config").submit(function(event) {
+                event.preventDefault();
+                selected = $("select#metX option:selected");
+                var metX = selected.text();
+                var selected = $("select#negX option:selected");
+                var negX = selected.text();
+                var selected = $("select#posX option:selected");
+                var posX = selected.text();
+
+                metY = [] 
+                var selected = $("select#metY option:selected");
+                for (var i = 0; i < selected.length; i++) {
+                    metY.push(selected[i].text);
+                }
+
+                var selected = $("select#negY option:selected");
+                var negY = selected.text();
+                var selected = $("select#posY option:selected");
+                var posY = selected.text();
+
+                var checked = $("input[@name='ctype']:checked");
+                if (checked.val()) var chart_type = checked.val();
+
+		overlay = 0;
+		var overlayed = $("input[@name='overlay']:checked");
+		if (overlayed.val()) var overlay = 1;
+
+                var rangeStart = $("input#rangeStart").val();
+                var rangeEnd = $("input#rangeEnd").val();
+
+
+                data = {}
+                data.metX = metX;
+                data.negX = negX;
+                data.posX = posX;
+
+                for (var i = 0; i < metY.length; i++) {
+                    var key = 'metY_' + i;
+                    data[key] = metY[i];
+                }
+                data.numberY = metY.length;
+                data.negY = negY;
+                data.posY = posY;
+                
+                data.rangeStart = rangeStart;
+                data.rangeEnd = rangeEnd;
+
+                data.chartType = chart_type;
+		
+
+                //clear range and hidden fields
+                //range = [];
+                //$("#plot_config").each(function() {
+                //    this.reset();
+                //});
+                $.post("/tests/plot/", data, function(responseData) {
+                    //alert(responseData.response_text);
+                    var plotdiv = document.createElement('div');
+                    plotdiv.className = "plot";
+                    var img = document.createElement('img');
+                    img.src = "plots/" + responseData.imagename;
+                    $("#plot_div").append(plotdiv);
+                    $(plotdiv).append(img);
+                    //$(plotdiv).insertAfter(this);
+                }, "json")
+            });
+
+        });
+    </script>
+
+
+
+    <body>
+    <H1>Tests</H1>
+    <div id="table_div_json"></div>
+    <div id="selected"></div>
+    <div id="metric_table"></div>
+    <div id="plot_form">
+        <form id ="plot_config" action="">
+            <label for="xaxis">X Axis:</label>
+            <select name="metX" id="metX"></select>
+            <label for="negativeEndX">Negative End:</label>
+            <select name="negX" id="negX"></select>
+            <label for="PositiveEndX">Positive End:</label>
+            <select name="posX" id="posX">BU_in</select>
+
+            <label for="yaxis">Y Axis:</label>
+            <select name="metY" id="metY" multiple="multiple"></select>
+            <label for="negativeEndY">Negative End:</label>
+            <select name="negY" id="negY"></select>
+            <label for="PositiveEndY">Positive End:</label>
+            <select name="posY" id="posY"></select>
+
+            <label for="chart_type">Chart Type</label>
+            <input type="radio" name="ctype" value="SimpleLineChart" checked="checked">Simple Line</input>
+            <input type="radio" name="ctype" value="XYLineChart">Line XY</input>
+            <input type="radio" name="ctype" value="StackedVerticalBarChart">Stacked Vertical Bar</input>
+
+	    <label for="overlay">Plot Type</label>
+	    <input type="checkbox" name="overlay">Overlay</input>
+
+            <input type="hidden" name="rangeStart" id="rangeStart" value="" />
+            <input type="hidden" name="rangeEnd" id="rangeEnd" value="" />
+
+            <input type="submit" class="button" name="plot" value="Generate Plot" />
+        </form>
+    </div>
+    <div id="plot_div"></div>
+    </body>
+</html>
+
+{% endif %}

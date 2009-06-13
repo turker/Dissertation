@@ -1,0 +1,25 @@
+<html>
+    <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+
+    <script>
+        // Load jQuery
+        google.load("jquery", "1");
+
+        google.load('visualization', '1', {packages:['table']});
+
+        google.setOnLoadCallback(drawTable);
+        function drawTable() {
+          var json_table = new google.visualization.Table(document.getElementById('table_div_json'));
+          var json_data = new google.visualization.DataTable({{json|safe}}, 0.5);
+          json_table.draw(json_data, {showRowNumber: false});
+        }     
+      
+    </script>
+
+    <body>
+    <H1>Tests</H1>
+    <div id="table_div_json"></div>
+    <div id="selected"></div>
+    </body>
+</html>
+

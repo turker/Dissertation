@@ -1,0 +1,50 @@
+<html>
+    <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+
+
+{% if test_id %}
+    <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script>
+        google.load('visualization', '1', {packages:['table']});
+        google.load("jquery", "1");
+        google.setOnLoadCallback(drawTable);
+        function drawTable() {
+            var res_table = new google.visualization.Table(document.getElementById('results'));
+            var res_data = new google.visualization.DataTable({{json_res|safe}}, 0.5);
+            res_table.draw(res_data, {showRowNumber: false});  
+
+            var param_table = new google.visualization.Table(document.getElementById('parameters'));
+            var param_data = new google.visualization.DataTable({{json_param|safe}}, 0.5);
+            param_table.draw(param_data, {showRowNumber:false});  
+
+            {% for p in plots %}
+                var plotdiv = document.createElement('div');
+                plotdiv.className = "plot";
+                var img = document.createElement('img');
+                img.src = "/tests/plots/{{p}}"; 
+                $("#plots").append(plotdiv);
+                $(plotdiv).append(img);
+
+            {% endfor %}
+        }
+    </script>
+
+    <body>
+        <h3> Test Details: </h3>
+        {% for t in test_info %}
+            <p> Test Time: {{ t.created }}
+            <p> Test Name: {{ t.name }}
+            <p> Test Comment: {{ t.comment }}
+        {% endfor %}
+        <h3>Test Results</h3>
+        <div id="results"></div>
+        <h3>Test Parameters</h3>
+        <div id="parameters"></div>
+        <h3>Related Plots</h3>
+        <div id="plots"></div>
+
+    </body>
+{% else %}
+    <p>No test id is given.</p>
+{% endif %}
+</html>
